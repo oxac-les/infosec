@@ -37,7 +37,8 @@ p {
 
 .introduction {
   padding: 20px;
-  background-color: #ECECFB; }
+  background-color: #ECECFB;
+  margin-bottom: 20px; }
 
 /* misc */
 .marginTop {
@@ -330,7 +331,7 @@ p {
   padding-right: 20px; }
 
 .pandgBox {
-  margin: 10px 0;
+  margin-bottom: 20px;
   width: 100%;
   Height: 200px;
   background-image: url(../img/watermark.png);
@@ -432,9 +433,97 @@ p {
 .pandgBoxes .boxWrap:nth-child(5n+5) :hover .pandgText {
   background-color: #00397a; }
 
+/* bootstrap tabs */
+.nav-tabs {
+  font-size: 18px;
+  border: none;
+  font-family: "Merriweather", serif; }
+
+.nav-tabs .icon {
+  padding-right: 10px; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #002147;
+  color: white; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #002147;
+  color: white; }
+
+.nav-tabs > li > a {
+  background-color: #ECECFB;
+  color: #002147;
+  border-radius: 0;
+  padding: 20px;
+  margin-right: 5px; }
+
+/* bootstrap accordion */
+#accordion {
+  text-align: left; }
+
+.panel-default > .panel-heading {
+  color: white;
+  border: none;
+  border-radius: 0; }
+
+.panel-default:nth-child(odd) .panel-heading {
+  background-color: #4891DC; }
+
+.panel-default:nth-child(even) .panel-heading {
+  background-color: #73abe4; }
+
+.panel-default > .panel-heading h4 {
+  font-family: "Merriweather", serif;
+  font-size: 22px; }
+
+.panel-default {
+  border: none; }
+
+.panel {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.panel-title > a {
+  display: block; }
+
+.panel-default > .panel-heading h4:after {
+  content: "\f067";
+  font-family: fontawesome;
+  padding-right: 10px;
+  float: right;
+  margin-top: -20px; }
+
+/* sidebar */
+.sideboxTools {
+  background-color: #69913B; }
+
+.sideboxServices {
+  background-color: #CF7A30; }
+
+.sideboxInfo {
+  background-color: #4891DC; }
+
+.sideboxTools, .sideboxServices, .sideboxInfo {
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px; }
+
+.sideboxTools span, .sideboxServices span, .sideboxInfo span {
+  font-size: 20px;
+  font-family: "Merriweather", serif; }
+
+.sideboxTools li, .sideboxServices li, .sideboxInfo li {
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  margin-left: -38px;
+  padding-top: 5px; }
+.sideboxTools li a, .sideboxServices li a, .sideboxInfo li a {
+  color: white; }
+
 /* services */
 .servBox {
-  margin: 10px 0;
+  margin-bottom: 20px;
   width: 100%;
   Height: 200px;
   background-image: url(../img/watermark.png);
@@ -526,7 +615,7 @@ p {
 .servBoxes .boxWrap:nth-child(5n+5) .servBox {
   background-position: 400px 0px; }
 
-/* i want to */
+/* i want to landing page */
 #iwantto {
   text-align: center; }
 
@@ -594,6 +683,26 @@ p {
 .iwanttoWrap {
   padding: 20px;
   min-height: 200px; }
+
+/* i want to sub page */
+h1.iwantto .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: #69913B;
+  color: white; }
+
+h1.iwantto .fa {
+  font-size: 36px;
+  padding: 10px 20px;
+  margin-right: 10px; }
+
+.iwantto span h1 {
+  display: block;
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+  color: #001F46; }
 
 /* footer */
 .barBottom {
@@ -668,7 +777,8 @@ footer {
 .btn {
   background-color: #4891DC;
   color: #fff;
-  border-radius: 0; }
+  border-radius: 0;
+  white-space: normal; }
 
 .btn:hover {
   background-color: #002147;
@@ -677,6 +787,16 @@ footer {
 .btn .fa {
   padding-left: 5px;
   color: white; }
+
+.btnLge {
+  padding: 10px 5px;
+  font-size: 22px;
+  font-family: "Merriweather", serif; }
+
+.btn:after, .btnLge:after {
+  content: "\f0da";
+  font-family: fontawesome;
+  padding-left: 10px; }
 
 /* responsive adjustments */
 /* small phones */

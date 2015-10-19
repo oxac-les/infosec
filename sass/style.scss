@@ -50,6 +50,7 @@ p {font-size: 16px;}
 .introduction {
     padding:20px; 
     background-color: #ECECFB;
+    margin-bottom:20px;
 }
 
 /* misc */
@@ -397,7 +398,7 @@ padding-right: 20px;
 }
 
 .pandgBox {
-    margin:10px 0;
+    margin-bottom:20px;
     width:100%;
     Height:200px;
     background-image: url(../img/watermark.png);
@@ -478,12 +479,108 @@ padding-right: 20px;
 }
 
 
+/* bootstrap tabs */
+
+.nav-tabs {
+    font-size: 18px;
+    border: none;
+    font-family:$headingFontFamily;
+}
+.nav-tabs .icon {
+    padding-right:10px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background-color: $primaryColour;
+    color:white;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: $primaryColour;
+    color:white;  
+}
+.nav-tabs>li>a {
+    background-color: #ECECFB;
+    color:$primaryColour;
+    border-radius: 0;
+    padding:20px;
+    margin-right: 5px;
+}
 
 
+/* bootstrap accordion */
+
+#accordion {
+    text-align: left;
+}
+.panel-default>.panel-heading {
+    color:white;
+    border:none;
+    border-radius: 0;
+}
+.panel-default:nth-child(odd) .panel-heading{
+    background-color: $emphasisColour;
+}
+.panel-default:nth-child(even) .panel-heading{
+    background-color: lighten($emphasisColour,10%);
+}
+.panel-default>.panel-heading h4 {
+    font-family: $headingFontFamily;
+    font-size: 22px;
+}
+.panel-default {
+    border:none;
+}
+.panel {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.panel-title>a {
+    display: block;
+}
+.panel-default>.panel-heading h4:after {
+    content:"\f067";
+    font-family: fontawesome;
+    padding-right:10px;
+    float: right;
+    margin-top:-20px;
+}
+
+/* sidebar */
+
+.sideboxTools {
+    background-color: $emphasisColour2;
+}
+.sideboxServices {
+    background-color: $emphasisColour3;
+}
+.sideboxInfo {
+    background-color: $emphasisColour;
+}
+.sideboxTools, .sideboxServices, .sideboxInfo {
+    padding:20px;
+    color:white;
+    margin-bottom: 20px;
+}
+.sideboxTools, .sideboxServices, .sideboxInfo {
+    span {
+        font-size: 20px;
+        font-family:$headingFontFamily;
+    }
+}
+.sideboxTools , .sideboxServices, .sideboxInfo {
+    li {font-size: 16px;
+        text-decoration: none;
+        list-style:none;
+        margin-left:-38px;
+        padding-top: 5px;
+    }
+    li a {color:white;
+    }
+}
+    
 /* services */
 
 .servBox {
-    margin:10px 0;
+    margin-bottom:20px;
     width:100%;
     Height:200px;
     background-image: url(../img/watermark.png);
@@ -581,7 +678,7 @@ padding-right: 20px;
 
 
 
-/* i want to */
+/* i want to landing page */
 
 #iwantto {
     text-align: center;
@@ -658,6 +755,27 @@ padding-right: 20px;
 }
 
 
+/* i want to sub page */
+
+h1.iwantto .icon  {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom:20px;
+    background-color: $emphasisColour2;
+    color:white;
+}
+h1.iwantto .fa {
+    font-size: 36px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.iwantto span h1 {
+    display:block;
+    font-size: 22px;
+    font-family: $headingFontFamily;
+    color:$bodyText;
+}
 
 
 /* footer */
@@ -755,10 +873,32 @@ footer {
 
 /* buttons */
 
-.btn {background-color: $secondaryColour; color:#fff;border-radius: 0;}
-.btn:hover {background-color: $primaryColour;color: #fff;}
-.btn .fa {padding-left: 5px; color:white;}
+.btn {
+    background-color: $secondaryColour; 
+    color:#fff;
+    border-radius: 0;
+    white-space:normal;
+}
+.btn:hover {
+    background-color: $primaryColour;
+    color: #fff;}
+.btn .fa {
+    padding-left: 5px; 
+    color:white;
+}
 
+.btnLge {
+    padding:10px 5px;
+    font-size: 22px;
+    font-family:$headingFontFamily;
+}
+
+
+.btn:after, .btnLge:after {
+    content:"\f0da";
+    font-family: fontawesome;
+    padding-left:10px;
+}
 
 
 
