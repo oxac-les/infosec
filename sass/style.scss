@@ -1,0 +1,786 @@
+// fonts
+$headingFontFamily: 'Merriweather', serif;
+$standardFontFamily: 'Open Sans', sans-serif;
+
+//colours
+$primaryColour:#002147; //oxblue
+$secondaryColour:#4891DC; //blue
+$primaryColourText:#fff;
+$secondaryColourText:#fff;
+$emphasisColour:$secondaryColour; //blue
+$emphasisColour2:#69913B; //green
+$emphasisColour3:#CF7A30; //orange
+$emphasisColour4:#BE0F34; //red
+$emphasisColour5:$primaryColour; //oxblue
+$bodyText:#001F46;
+ 
+// social icons
+$rss:#FF9900;
+$twitter:#28A9E0;
+$wordpress:#007897;
+    
+/* front end pages */
+
+/* fonts */
+
+body {
+    font-family: $standardFontFamily;
+	color:$bodyText;
+    }
+h1, h2, h3, h4, h4, h5, h6 {
+    font-family: $headingFontFamily;
+    letter-spacing: 1px;
+}
+h1 {font-size: 28px;}
+h2 {font-size: 22px; color:$secondaryColour;}
+h3 {font-size: 20px; }
+h4 {font-size: 20px; color:$secondaryColour}
+h5 {font-size: 18px;}
+h6 {font-size: 12px;} 
+p {font-size: 16px;}
+
+
+
+/* content */
+
+#content {
+    min-height:450px;
+}
+
+.introduction {
+    padding:20px; 
+    background-color: #ECECFB;
+}
+
+/* misc */
+
+.marginTop {
+    margin-top:20px;
+}
+
+.picleft img {
+    float:left; 
+    margin-right:20px;
+}
+.picright img {
+    float:right; 
+    margin-left:20px;
+}
+
+.clearfix {
+    clear:both;
+}
+.showmore a:before {
+    content:"\f067";
+    font-family: fontawesome;
+    font-weight: bold;
+    padding-right:10px;
+}
+.showmore  {
+    display:block;
+    margin:20px 0;
+}
+.showmore a:hover {
+    text-decoration: none;
+}
+
+
+/* wraps */
+
+.headerwrap {
+    background-image: url(../img/watermark.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 100px) 50%; 
+    background-color: $primaryColour;
+}
+.footerwrap {
+    background-color: $primaryColour;
+}
+
+
+
+/* header */
+
+.barTop {
+    height:15px;
+    background-color: $secondaryColour;
+}
+.oxlogo, .sitelogo {
+    padding: 55px 20px 0 0;
+    float:left;
+}
+.header {
+    height:230px;
+    position:relative;
+    a, a:hover {
+        font-size: 18px;
+        color:white;
+        text-decoration: none;}
+    .searchTxt {
+        padding-left: 10px; 
+        font-size:16px;
+        color:white;}
+    .sitename {
+        float:left;
+        padding: 46px 20px 0 0;
+        color: white;
+        font-size: 48px;
+        font-family: $standardFontFamily;
+    }
+    .searchBtn {
+        border:none;
+        background:none;
+        color:white;
+        margin-left:-20px;
+    }
+    .searchBox input[type='input']{width:200px;}
+}
+
+
+/* header icons */
+
+.header .searchBox {
+    padding-top: 80px;
+}
+.header .fa-search {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.header .fa-exclamation-triangle  {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color: $emphasisColour4;
+}
+.header .fa-exclamation-triangle {
+    text-align: center;
+    padding-top: 4px;
+}
+.header .contact {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+
+/* navbar */
+
+.navbar-default { 
+    background-color: $secondaryColour;
+    border-color: $secondaryColour;
+    font-family: $standardFontFamily;
+    font-size: 18px;
+    text-transform: uppercase;
+    position:relative;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    border-right: 1px solid #4C9DEF;
+}
+.navbar-default .navbar-nav>li>a:first-child {
+    border-left: 1px solid #4C9DEF;
+}
+.navbar-default .navbar-nav>.active>a, {
+    background: white;
+    color:$secondaryColour;
+}
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+    color:white;
+}
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+    color:white;
+}
+.navbar-collapse {
+    padding-left:0;
+}
+.navbar-default .navbar-nav>li>a:hover:after {
+    content:"\f0d8";
+    font-family: fontawesome;
+    font-size: 20px;
+    position:absolute;
+    bottom:-7px;
+    left:50%;
+    color:white;
+}
+
+
+/* home page */
+
+#homepage h2 {
+    text-align: center;
+    padding:10px;
+    margin:0;
+    color:white;
+    font-size: 18px;
+    margin-bottom:20px;
+}
+
+#homepage  .icon   {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom: 20px;
+    margin-right:10px;
+}
+#homepage .fa {
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 0;
+}
+#homepage li {
+    list-style-type: none;
+    margin-left: -38px;
+}
+
+
+#homepage {
+    .iwantto h2 {
+    background-color: $secondaryColour;
+    }
+    .incidentreport h2 {
+    background-color:$emphasisColour4;
+    height: 40px;
+    }
+    .quicklinks h2 {
+    background-color:$emphasisColour3;
+    }
+    .alertsandfixes h2.alerts {
+    background-color:$primaryColour;
+    }
+    .alertsandfixes h2.fixes {
+    background-color:$emphasisColour2;
+    }
+}
+
+/* home pge i want to */
+
+/* trying to fix span bridging margin
+
+#homepage .iwanttoBtn {
+    display:inline-block;
+}
+#homepage .iwanttoIcon span  {
+    width:80px; 
+}
+#homepage .iwanttoTxt span  {
+    width:100%;
+}
+*/
+
+#homepage .iwantto .icon  {
+    background-color: $secondaryColour;
+}
+
+#homepage .iwanttoBtn span {
+    font-size: 20px;
+    display:inline-block;
+    position: absolute;
+    color:$bodyText;
+}
+
+
+/* homepage report incident */
+
+#homepage .incidentreport .icon {
+    background-color: $emphasisColour4;
+    margin-top:-10px;
+    margin-left:10px;
+}
+
+#homepage .incidentreport h2 {
+    text-align:left;
+    color:white;
+    font-size:18px;
+    margin-top:-70px;
+    padding-left:65px;
+}
+#homepage .incidentreport li {
+    margin-left:-22px;
+    list-style-type: disc;
+}
+
+
+#homepage .reportincidentBtn .icon {
+    margin:0;
+    padding-top:10px;
+}
+#homepage .reportincidentBtn span {
+    font-size: 20px;
+    padding-left:10px;
+    color:$bodyText;
+}
+#homepage .reportincidentBtn a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* homepage quick links */
+
+#homepage .quicklinks .fa-caret-right {
+    color:$bodyText;
+    font-size:14px;
+    padding:0;
+    margin:0 0 0 5px;
+    text-align:left;
+    height:20px;
+}
+#homepage .quicklinks li {
+    margin-bottom:20px;
+}
+#homepage .quicklinks li a:after {
+    margin-bottom:20px;
+    content:"\f0da";
+    font-family: fontawesome;
+    font-weight: bold;
+    padding-left:10px;
+}
+
+
+/* current alerts */
+
+.alert {
+    border: 1px solid #eee;
+    position: relative;
+    margin-top:30px;
+}
+.alert span {
+    display:block;
+}
+.alertDate {
+    background-color: $primaryColour;
+    color:white;
+    position:absolute;
+    top:-15px;
+    right:23px;
+    padding:4px;
+    width:100px;
+}
+.alertTitle {
+    font-weight: bold;
+}
+
+
+/* fixes */
+
+.fix {
+    position: relative;
+    margin-top:20px;
+}
+.fix span {
+    display:block;
+}
+.fixRef {
+    font-weight: bold;
+    display:block;
+}
+
+
+
+/* guidance and policy */
+.boxWrap a {
+  color: white;
+  text-decoration: none; }
+.gandpKey .fa {
+    display:table;
+    padding-top: 10px;
+    margin-left:-38px;
+    font-size: 16px;
+}
+.gandpKey li:before {
+padding-right: 20px;
+}
+
+.pandgBox {
+    margin:10px 0;
+    width:100%;
+    Height:200px;
+    background-image: url(../img/watermark.png);
+    color:white;
+    text-align: center;
+    position:relative;
+}
+.pandgBox .pandgTitle {
+    font-size: 22px;
+    font-family:$headingFontFamily;
+    display: block;
+    padding: 30px 10px 10px 10px;
+}
+.pandgBox .pandgText {
+    font-size: 15px;
+    padding:10px;
+    width:100%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+}
+
+.pandgBoxes .boxWrap:nth-child(5n+1) {
+    .pandgBox,.pandgText {background-color: $emphasisColour;}
+    .pandgBox {background-position: 0px 0px;}
+}
+.pandgBoxes .boxWrap:nth-child(5n+2) {
+    .pandgBox,.pandgText {background-color: $emphasisColour2;}
+    .pandgBox {background-position: 100px 100px;}
+}
+.pandgBoxes .boxWrap:nth-child(5n+3) {
+    .pandgBox,.pandgText {background-color: $emphasisColour3;}
+    .pandgBox {background-position: 200px 0px;}
+}
+.pandgBoxes .boxWrap:nth-child(5n+4) {
+    .pandgBox,.pandgText {background-color: $emphasisColour4;}
+    .pandgBox {background-position: 300px 100px;}
+}
+.pandgBoxes .boxWrap:nth-child(5n+5) {
+    .pandgBox,.pandgText {background-color: $emphasisColour5;}
+    .pandgBox {background-position: 400px 0px;}
+}
+
+.pandgBoxes .boxWrap:nth-child(5n+1) {
+    .pandgBox { background-color: $emphasisColour; }
+    .pandgText {   background-color: darken($emphasisColour,20%); }
+    .pandgBox {background-position: 0px 0px; }
+    :hover .pandgBox { background-color: lighten($emphasisColour,10%); }
+    :hover .pandgText {background-color: darken($emphasisColour,10%); }
+}
+.pandgBoxes .boxWrap:nth-child(5n+2) {
+    .pandgBox {background-color: $emphasisColour2; }
+    .pandgText {background-color:darken($emphasisColour2,10%); }
+    .pandgBox {background-position: 100px 100px; }
+    :hover .pandgBox {background-color: lighten($emphasisColour2,10%); }
+    :hover .pandgText {background-color: lighten($emphasisColour2,0%); }
+}
+.pandgBoxes .boxWrap:nth-child(5n+3) {
+    .pandgBox {background-color: $emphasisColour3; }
+    .pandgText {background-color: darken($emphasisColour3,10%); }
+    .pandgBox {background-position: 200px 0px; }
+    :hover .pandgBox {background-color: lighten($emphasisColour3,10%); }
+    :hover .pandgText {background-color: lighten($emphasisColour3,0%); }
+}
+.pandgBoxes .boxWrap:nth-child(5n+4) {
+    .pandgBox {background-color: $emphasisColour4; }
+    .pandgText {background-color: darken($emphasisColour4,10%); }
+    .pandgBox {background-position: 300px 100px; }
+    :hover .pandgBox {background-color: lighten($emphasisColour4,10%); }
+    :hover .pandgText {background-color: lighten($emphasisColour4,0%); }
+}
+.pandgBoxes .boxWrap:nth-child(5n+5) {
+    .pandgBox {background-color: $emphasisColour5; }
+    .pandgText {background-color:darken($emphasisColour5,0%); }
+    .pandgBox {background-position: 400px 0px; }
+    :hover .pandgBox {background-color: lighten($emphasisColour5,10%); }
+    :hover .pandgText {background-color: lighten($emphasisColour5,10%); }
+}
+
+
+
+
+/* services */
+
+.servBox {
+    margin:10px 0;
+    width:100%;
+    Height:200px;
+    background-image: url(../img/watermark.png);
+    color:white;
+    text-align: center;
+    position:relative;
+    overflow: hidden;
+}
+.servBox .servTitle {
+    font-size: 22px;
+    font-family:$headingFontFamily;
+    display: block;
+    padding: 30px 10px 10px 10px;
+}
+.servBox .servText {
+    font-size: 15px;
+    padding:10px;
+    width:100%;
+    height:100px;
+}
+.servBox .servBoxOvly {
+    position:absolute;
+    height: 100%;
+    width:100%;
+}
+.servBox .servBoxOvly {
+    transition: top 0.5s ease;
+    top:50%;
+}
+.servBox:hover  .servBoxOvly{
+    top:0;
+}
+
+.servBox .servText {
+    transition: top 0.5s ease;
+    position: absolute;
+    top:200px;
+}
+.servBox:hover .servText {
+  position: absolute;
+  top: 50%; }
+
+.servBoxes .boxWrap:nth-child(5n+1) {
+    .servBox, .servBoxOvly {
+  background-color: $emphasisColour; }
+    .servBox {
+  background-position: 0px 0px; }
+}
+.servBoxes .boxWrap:nth-child(5n+2) {
+    .servBox, .servBoxOvly {
+  background-color: $emphasisColour2; }
+.servBox {
+  background-position: 100px 100px; }
+}
+.servBoxes .boxWrap:nth-child(5n+3) {
+    .servBox, .servBoxOvly {
+  background-color: $emphasisColour3; }
+.servBox {
+  background-position: 200px 0px; }
+}
+.servBoxes .boxWrap:nth-child(5n+4) {
+    .servBox, .servBoxOvly {
+  background-color: $emphasisColour4; }
+.servBox {
+  background-position: 300px 100px; }
+}
+.servBoxes .boxWrap:nth-child(5n+5) {
+    .servBox, .servBoxOvly {
+  background-color: $emphasisColour5; }
+ .servBox {
+  background-position: 400px 0px; }
+}
+
+.servBoxes .boxWrap:nth-child(5n+1) {
+    .servBox,.servBoxOvly {background-color: $emphasisColour;}
+    .servBox {background-position: 0px 0px;}
+}
+.servBoxes .boxWrap:nth-child(5n+2) {
+    .servBox,.servBoxOvly {background-color: $emphasisColour2;}
+    .servBox {background-position: 100px 100px;}
+}
+.servBoxes .boxWrap:nth-child(5n+3) {
+    .servBox,.servBoxOvly {background-color: $emphasisColour3;}
+    .servBox {background-position: 200px 0px;}
+}
+.servBoxes .boxWrap:nth-child(5n+4) {
+    .servBox,.servBoxOvly {background-color: $emphasisColour4;}
+    .servBox {background-position: 300px 100px;}
+}
+.servBoxes .boxWrap:nth-child(5n+5) {
+    .servBox,.servBoxOvly {background-color: $emphasisColour5;}
+    .servBox {background-position: 400px 0px;}
+}
+
+
+
+
+/* i want to */
+
+#iwantto {
+    text-align: center;
+}
+#iwantto .iwantto:nth-child(5n+1) { 
+    .icon {background-color: $emphasisColour;}
+    :hover .icon {
+        background-color: white;
+        color:$emphasisColour;
+        border:1px solid $emphasisColour;
+    }
+}
+#iwantto .iwantto:nth-child(5n+2) { 
+    .icon {background-color: $emphasisColour2;}
+    :hover .icon {
+        background-color: white;
+        color:$emphasisColour2;
+        border:1px solid $emphasisColour2;
+    }
+}
+#iwantto .iwantto:nth-child(5n+3) { 
+    .icon {background-color: $emphasisColour3;}
+    :hover .icon {
+        background-color: white;
+        color:$emphasisColour3;
+        border:1px solid $emphasisColour3;
+    }
+}
+#iwantto .iwantto:nth-child(5n+4) { 
+    .icon {background-color: $emphasisColour4;}
+    :hover .icon {
+        background-color: white;
+        color:$emphasisColour4;
+        border:1px solid $emphasisColour4;
+    }
+}
+#iwantto .iwantto:nth-child(5n+5) { 
+    .icon {background-color: $emphasisColour5;}
+    :hover .icon {
+        background-color: white;
+        color:$emphasisColour5;
+        border:1px solid $emphasisColour5;
+    }
+}
+#iwantto .iwantto .icon   {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+#iwantto .iwantto .fa {
+    color:white;
+    font-size: 36px;
+    padding: 10px 0;
+}
+#iwantto .iwantto span {
+    display:block;
+    font-size: 22px;
+    font-family: $headingFontFamily;
+    color:$bodyText;
+}
+#iwantto a:hover{
+    text-decoration: none;
+}
+#iwantto .iwantto .icon {
+    transition: all .2s ease-in-out; 
+}
+#iwantto .iwantto:hover .icon {
+    transform: scale(1.2); 
+}
+.iwanttoWrap {
+    padding:20px;
+    min-height:200px;
+}
+
+
+
+
+/* footer */
+
+.barBottom {
+    height:2px;
+    margin-bottom:2px;
+    background-color: $primaryColour;
+}
+footer {
+    color:white;
+    min-height:200px;
+    padding-top:20px;
+    .sitename {
+    font-size:22px;
+    text-transform:uppercase;
+    }
+    .heading {
+    font-size:18px;
+    text-transform:uppercase;
+    }
+    .copyright { 
+	font-size: 12px;
+    margin-top:20px;
+    }
+    .infosecicon img {
+        width:30px;
+        position: absolute;
+        top:3px;
+        padding-left:10px;
+    }
+}
+#footerLinks {
+    li {
+    list-style: none;
+    }
+    li a {
+        color:white;
+    }
+    li a:hover {
+        list-style: underline;
+    }
+}
+
+
+
+
+
+
+
+/* site social icons */
+
+#social-links {
+    margin-left:-37px;
+}
+#social-links {
+    h2 {
+    position: absolute;
+    margin-left: -9999px; 
+    }
+    li {
+        margin-right:10px;
+        margin-top:20px;
+        padding:4px 20px;
+    }
+
+    li:first-child {
+    }
+    li a {
+        color: #fff;
+        overflow: hidden; 
+     }
+    li a::before {
+    }
+    .fa:hover {
+        color: $primaryColour; 
+    }
+    .fa {
+        color: #fff; 
+        font-size: 1.4em;
+    }
+}
+#social-links {
+    li.fa-rss {background-color: $rss;} 
+    li.fa-twitter {background-color: $twitter;} 
+    li.fa-wordpress {background-color: $wordpress;} 
+    li.fa-rss:hover, 
+    li.fa-twitter:hover, 
+    li.fa-wordpress:hover{background-color: white;} 
+    li.fa-rss:hover {color: $rss;} 
+    li.fa-twitter:hover {color: $twitter;} 
+    li.fa-wordpress:hover {color: $wordpress;} 
+}
+
+
+/* buttons */
+
+.btn {background-color: $secondaryColour; color:#fff;border-radius: 0;}
+.btn:hover {background-color: $primaryColour;color: #fff;}
+.btn .fa {padding-left: 5px; color:white;}
+
+
+
+
+
+/* responsive adjustments */
+
+/* small phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #homepage h2 {margin-top:30px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .quicklinks {clear:both;} 
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
