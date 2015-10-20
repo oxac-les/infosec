@@ -218,7 +218,6 @@ p {font-size: 16px;}
     font-size: 18px;
     margin-bottom:20px;
 }
-
 #homepage  .icon   {
     width:60px;
     height:60px;
@@ -257,21 +256,6 @@ p {font-size: 16px;}
     }
 }
 
-/* home pge i want to */
-
-/* trying to fix span bridging margin
-
-#homepage .iwanttoBtn {
-    display:inline-block;
-}
-#homepage .iwanttoIcon span  {
-    width:80px; 
-}
-#homepage .iwanttoTxt span  {
-    width:100%;
-}
-*/
-
 #homepage .iwantto .icon  {
     background-color: $secondaryColour;
 }
@@ -284,12 +268,12 @@ p {font-size: 16px;}
 }
 
 
-/* homepage report incident */
+
+/* homepage report incident heading */
 
 #homepage .incidentreport .icon {
     background-color: $emphasisColour4;
     margin-top:-10px;
-    margin-left:10px;
 }
 
 #homepage .incidentreport h2 {
@@ -305,20 +289,38 @@ p {font-size: 16px;}
 }
 
 
-#homepage .reportincidentBtn .icon {
+/*  report incident button */
+
+.iconBtn {
+    margin:20px 0 0 0;
+}
+.iconBtn .icon {
     margin:0;
     padding-top:10px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:10px;
 }
-#homepage .reportincidentBtn span {
+.iconBtn span  {
     font-size: 20px;
-    padding-left:10px;
     color:$bodyText;
 }
-#homepage .reportincidentBtn a:hover {
+.iconBtn a:hover {
     text-decoration: none;
 }
-
-
+.iconBtn .fa {
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 0;
+}
+.reportincidentBtn .icon   {
+    background-color: $emphasisColour4;
+}
+.helpBtn .icon   {
+    background-color: $emphasisColour2;
+}
 
 
 /* homepage quick links */
@@ -506,43 +508,6 @@ padding-right: 20px;
 }
 
 
-/* bootstrap accordion */
-
-#accordion {
-    text-align: left;
-}
-.panel-default>.panel-heading {
-    color:white;
-    border:none;
-    border-radius: 0;
-}
-.panel-default:nth-child(odd) .panel-heading{
-    background-color: $emphasisColour;
-}
-.panel-default:nth-child(even) .panel-heading{
-    background-color: lighten($emphasisColour,10%);
-}
-.panel-default>.panel-heading h4 {
-    font-family: $headingFontFamily;
-    font-size: 22px;
-}
-.panel-default {
-    border:none;
-}
-.panel {
-    -webkit-box-shadow:none;
-    box-shadow:none;
-}
-.panel-title>a {
-    display: block;
-}
-.panel-default>.panel-heading h4:after {
-    content:"\f067";
-    font-family: fontawesome;
-    padding-right:10px;
-    float: right;
-    margin-top:-20px;
-}
 
 /* sidebar */
 
@@ -777,6 +742,45 @@ h1.iwantto .fa {
     color:$bodyText;
 }
 
+
+
+/* bootstrap accordion */
+
+#accordion {
+    text-align: left;
+}
+.panel-default>.panel-heading {
+    color:white;
+    border:none;
+    border-radius: 0;
+}
+.panel-default:nth-child(odd) .panel-heading{
+    background-color: $emphasisColour;
+}
+.panel-default:nth-child(even) .panel-heading{
+    background-color: lighten($emphasisColour,10%);
+}
+.panel-default>.panel-heading h4 {
+    font-family: $headingFontFamily;
+    font-size: 22px;
+}
+.panel-default {
+    border:none;
+}
+.panel {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.panel-title>a {
+    display: block;
+}
+.panel-default>.panel-heading h4:after {
+    content:"\f067";
+    font-family: fontawesome;
+    // padding-right:10px;
+    // float: right;
+    // margin-top:-20px;
+}
 
 /* footer */
 

@@ -213,19 +213,6 @@ p {
 #homepage .alertsandfixes h2.fixes {
   background-color: #69913B; }
 
-/* home pge i want to */
-/* trying to fix span bridging margin
-
-#homepage .iwanttoBtn {
-    display:inline-block;
-}
-#homepage .iwanttoIcon span  {
-    width:80px; 
-}
-#homepage .iwanttoTxt span  {
-    width:100%;
-}
-*/
 #homepage .iwantto .icon {
   background-color: #4891DC; }
 
@@ -235,11 +222,10 @@ p {
   position: absolute;
   color: #001F46; }
 
-/* homepage report incident */
+/* homepage report incident heading */
 #homepage .incidentreport .icon {
   background-color: #BE0F34;
-  margin-top: -10px;
-  margin-left: 10px; }
+  margin-top: -10px; }
 
 #homepage .incidentreport h2 {
   text-align: left;
@@ -252,17 +238,36 @@ p {
   margin-left: -22px;
   list-style-type: disc; }
 
-#homepage .reportincidentBtn .icon {
-  margin: 0;
-  padding-top: 10px; }
+/*  report incident button */
+.iconBtn {
+  margin: 20px 0 0 0; }
 
-#homepage .reportincidentBtn span {
+.iconBtn .icon {
+  margin: 0;
+  padding-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px; }
+
+.iconBtn span {
   font-size: 20px;
-  padding-left: 10px;
   color: #001F46; }
 
-#homepage .reportincidentBtn a:hover {
+.iconBtn a:hover {
   text-decoration: none; }
+
+.iconBtn .fa {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 0; }
+
+.reportincidentBtn .icon {
+  background-color: #BE0F34; }
+
+.helpBtn .icon {
+  background-color: #69913B; }
 
 /* homepage quick links */
 #homepage .quicklinks .fa-caret-right {
@@ -456,42 +461,6 @@ p {
   border-radius: 0;
   padding: 20px;
   margin-right: 5px; }
-
-/* bootstrap accordion */
-#accordion {
-  text-align: left; }
-
-.panel-default > .panel-heading {
-  color: white;
-  border: none;
-  border-radius: 0; }
-
-.panel-default:nth-child(odd) .panel-heading {
-  background-color: #4891DC; }
-
-.panel-default:nth-child(even) .panel-heading {
-  background-color: #73abe4; }
-
-.panel-default > .panel-heading h4 {
-  font-family: "Merriweather", serif;
-  font-size: 22px; }
-
-.panel-default {
-  border: none; }
-
-.panel {
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-.panel-title > a {
-  display: block; }
-
-.panel-default > .panel-heading h4:after {
-  content: "\f067";
-  font-family: fontawesome;
-  padding-right: 10px;
-  float: right;
-  margin-top: -20px; }
 
 /* sidebar */
 .sideboxTools {
@@ -703,6 +672,39 @@ h1.iwantto .fa {
   font-size: 22px;
   font-family: "Merriweather", serif;
   color: #001F46; }
+
+/* bootstrap accordion */
+#accordion {
+  text-align: left; }
+
+.panel-default > .panel-heading {
+  color: white;
+  border: none;
+  border-radius: 0; }
+
+.panel-default:nth-child(odd) .panel-heading {
+  background-color: #4891DC; }
+
+.panel-default:nth-child(even) .panel-heading {
+  background-color: #73abe4; }
+
+.panel-default > .panel-heading h4 {
+  font-family: "Merriweather", serif;
+  font-size: 22px; }
+
+.panel-default {
+  border: none; }
+
+.panel {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.panel-title > a {
+  display: block; }
+
+.panel-default > .panel-heading h4:after {
+  content: "\f067";
+  font-family: fontawesome; }
 
 /* footer */
 .barBottom {
