@@ -725,15 +725,16 @@ h1.iwantto .fa {
     -webkit-box-shadow:none;
     box-shadow:none;
 }
-.panel-title>a {
+.panel-default .panel-title>a {
     display: block;
 }
-.panel-default>.panel-heading h4:after {
+.panel-default .panel-title:after {
     content:"\f067";
     font-family: fontawesome;
-    // padding-right:10px;
-    // float: right;
-    // margin-top:-20px;
+    position:absolute;
+    right:30px;
+    margin-top:-20px;
+    font-size:14px;
 }
 
 /* footer */
