@@ -210,34 +210,32 @@ p {font-size: 16px;}
 
 /* home page */
 
-#homepage h2 {
+#homepage {
+    h2 {
     text-align: center;
     padding:10px;
     margin:0;
     color:white;
     font-size: 18px;
     margin-bottom:20px;
-}
-#homepage  .icon   {
+    }
+    .icon   {
     width:60px;
     height:60px;
     border-radius:50%;
     margin-bottom: 20px;
     margin-right:10px;
-}
-#homepage .fa {
+    }
+    .fa {
     color:white;
     font-size: 36px;
     text-align: center;
     padding: 10px 0;
-}
-#homepage li {
+    }
+    li {
     list-style-type: none;
+    }
     margin-left: -38px;
-}
-
-
-#homepage {
     .iwantto h2 {
     background-color: $secondaryColour;
     }
@@ -254,38 +252,110 @@ p {font-size: 16px;}
     .alertsandfixes h2.fixes {
     background-color:$emphasisColour2;
     }
-}
-
-#homepage .iwantto .icon  {
-    background-color: $secondaryColour;
-}
-
-#homepage .iwanttoBtn span {
+    .iwanttoBtn span {
     font-size: 20px;
     display:inline-block;
     position: absolute;
     color:$bodyText;
+    }
+    .iwanttoBtn .icon  {
+    background-color: $secondaryColour;
+    }
+    .iwanttoBtn:hover .icon {
+    background-color: white;
+    color:$secondaryColour;
+    border:1px solid $secondaryColour;
+    }
+    .reportincidentBtn .icon  {
+    background-color: $emphasisColour4;
+    }
+    .reportincidentBtn:hover .icon {
+    background-color: white;
+    color:$emphasisColour4;
+    border:1px solid $emphasisColour4;
+    }  
+    .iwanttoBtn, .reportincidentBtn {
+        .icon  {
+        transition: all .2s ease-in-out; 
+        }
+    }
+    .iwanttoBtn:hover, .reportincidentBtn:hover {
+        .icon {
+        transform: scale(1.2);
+        }
+    }
 }
 
+
+/*  icon buttons */
+
+.iconBtn {
+    margin:20px 0 0 0;
+}
+.iconBtn .icon {
+    margin:0;
+    padding-top:10px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:10px;
+}
+.iconBtn span  {
+    font-size: 20px;
+    color:$bodyText;
+}
+.iconBtn a:hover {
+    text-decoration: none;
+}
+.iconBtn .fa {
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.reportincidentBtn .icon  {
+    background-color: $emphasisColour4;
+    transition: all .2s ease-in-out; 
+    }
+.reportincidentBtn:hover .icon {
+    transform: scale(1.2); 
+    background-color: white;
+    color:$emphasisColour4;
+    border:1px solid $emphasisColour4;
+    } 
+
+.helpBtn .icon  {
+    background-color: $emphasisColour2;
+    transition: all .2s ease-in-out; 
+    }
+.helpBtn:hover .icon {
+    transform: scale(1.2); 
+    background-color: white;
+    color:$emphasisColour2;
+    border:1px solid $emphasisColour2;
+    } 
 
 
 /* homepage report incident heading */
 
-#homepage .incidentreport .icon {
+#homepage {
+    .incidentreport .icon {
     background-color: $emphasisColour4;
     margin-top:-10px;
-}
-
-#homepage .incidentreport h2 {
+    }
+    .incidentreport h2 {
     text-align:left;
     color:white;
     font-size:18px;
     margin-top:-70px;
     padding-left:65px;
-}
-#homepage .incidentreport li {
+    }
+    .incidentreport li {
     margin-left:-22px;
     list-style-type: disc;
+    }
 }
 
 
@@ -296,6 +366,7 @@ p {font-size: 16px;}
 
 #homepage .quicklinks li {
     margin-bottom:20px;
+    margin-left:-40px;
 }
 
 
@@ -642,6 +713,29 @@ padding-right: 20px;
         border:1px solid $emphasisColour5;
     }
 }
+
+#iwantto .iwantto span {
+    display:block;
+    font-size: 22px;
+    font-family: $headingFontFamily;
+    color:$bodyText;
+}
+.iwanttoWrap {
+    padding:20px;
+    min-height:200px;
+}
+
+#iwantto a:hover{
+    text-decoration: none;
+}
+
+
+#iwantto .iwantto .icon {
+    transition: all .2s ease-in-out; 
+}
+#iwantto .iwantto:hover .icon {
+    transform: scale(1.2); 
+}
 #iwantto .iwantto .icon   {
     width:60px;
     height:60px;
@@ -653,25 +747,8 @@ padding-right: 20px;
     font-size: 36px;
     padding: 10px 0;
 }
-#iwantto .iwantto span {
-    display:block;
-    font-size: 22px;
-    font-family: $headingFontFamily;
-    color:$bodyText;
-}
-#iwantto a:hover{
-    text-decoration: none;
-}
-#iwantto .iwantto .icon {
-    transition: all .2s ease-in-out; 
-}
-#iwantto .iwantto:hover .icon {
-    transform: scale(1.2); 
-}
-.iwanttoWrap {
-    padding:20px;
-    min-height:200px;
-}
+
+
 
 
 /* i want to sub page */
@@ -737,8 +814,10 @@ h1.iwantto .fa {
     font-size:14px;
 }
 
-/* footer */
 
+
+/* footer */
+ 
 .barBottom {
     height:2px;
     margin-bottom:2px;
@@ -861,38 +940,6 @@ footer {
 
 
 
-/*  icon buttons */
-
-.iconBtn {
-    margin:20px 0 0 0;
-}
-.iconBtn .icon {
-    margin:0;
-    padding-top:10px;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    margin-right:10px;
-}
-.iconBtn span  {
-    font-size: 20px;
-    color:$bodyText;
-}
-.iconBtn a:hover {
-    text-decoration: none;
-}
-.iconBtn .fa {
-    color:white;
-    font-size: 36px;
-    text-align: center;
-    padding: 10px 0;
-}
-.reportincidentBtn .icon   {
-    background-color: $emphasisColour4;
-}
-.helpBtn .icon   {
-    background-color: $emphasisColour2;
-}
 
 
 /* links with rh chevron */
