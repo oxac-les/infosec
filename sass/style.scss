@@ -140,73 +140,74 @@ p {font-size: 16px;}
 
 /* header icons */
 
-.header .searchBox {
+.header {
+    .searchBox {
     padding-top: 80px;
-}
-.header .fa-search {
+    }
+    .fa-search {
     padding-left: 20px;
     padding-bottom: 20px;
-}
-.header .fa-exclamation-triangle  {
+    }
+    .fa-exclamation-triangle  {
     width:30px;
     height:30px;
     border-radius:50%;
     background-color: $emphasisColour4;
-}
-.header .fa-exclamation-triangle {
+    }
+    .fa-exclamation-triangle {
     text-align: center;
     padding-top: 4px;
-}
-.header .contact {
+    }
+    .contact {
     padding-left: 5px;
     padding-top: 10px;
+    }
 }
 
 
 /* navbar */
 
-.navbar-default { 
+.navbar-default {
+    border-radius:0;
     background-color: $secondaryColour;
     border-color: $secondaryColour;
     font-family: $standardFontFamily;
     font-size: 18px;
     text-transform: uppercase;
     position:relative;
-}
-.navbar-default .navbar-nav>li>a {
-    color: white;
-    border-right: 1px solid #4C9DEF;
-}
-.navbar-default .navbar-nav>li>a:first-child {
-    border-left: 1px solid #4C9DEF;
-}
-.navbar-default .navbar-nav>.active>a, {
-    background: white;
-    color:$secondaryColour;
-}
-.navbar-default .navbar-nav>.active>a:hover, 
-.navbar-default .navbar-nav>.active>a:focus {
-    background: none;
-    color:white;
-}
-.navbar-default .navbar-nav>li>a:hover, 
-.navbar-default .navbar-nav>li>a:focus {
-    color:white;
-}
-.navbar-collapse {
-    padding-left:0;
-}
-.navbar-default .navbar-nav>li>a:hover:after {
-    content:"\f0d8";
-    font-family: fontawesome;
-    font-size: 20px;
-    position:absolute;
-    bottom:-7px;
-    left:50%;
-    color:white;
-}
-.navbar {
-    border-radius:0;
+    
+    .navbar-nav>li>a {
+        color: white;
+        border-right: 1px solid #4C9DEF;
+    }
+    .navbar-nav>li>a:first-child {
+        border-left: 1px solid #4C9DEF;
+    }
+    .navbar-nav>.active>a, {
+        background: white;
+        color:$secondaryColour;
+    }
+    .navbar-nav>.active>a:hover, 
+    .navbar-nav>.active>a:focus {
+        background: none;
+        color:white;
+    }
+    .navbar-nav>li>a:hover, 
+    .navbar-nav>li>a:focus {
+        color:white;
+    }
+    .navbar-collapse {
+        padding-left:0;
+    }
+    .navbar-nav>li>a:hover:after {
+        content:"\f0d8";
+        font-family: fontawesome;
+        font-size: 20px;
+        position:absolute;
+        bottom:-7px;
+        left:50%;
+        color:white;
+    }
 }
 
 
@@ -278,68 +279,9 @@ p {font-size: 16px;}
     color:$emphasisColour4;
     border:1px solid $emphasisColour4;
     }  
-    .iwanttoBtn, .reportincidentBtn {
-        .icon  {
-        transition: all .2s ease-in-out; 
-        }
-    }
-    .iwanttoBtn:hover, .reportincidentBtn:hover {
-        .icon {
-        transform: scale(1.2);
-        }
-    }
 }
 
 
-/*  icon buttons */
-
-.iconBtn {
-    margin:20px 0 0 0;
-}
-.iconBtn .icon {
-    margin:0;
-    padding-top:10px;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    margin-right:10px;
-}
-.iconBtn span  {
-    font-size: 20px;
-    color:$bodyText;
-}
-.iconBtn a:hover {
-    text-decoration: none;
-}
-.iconBtn .fa {
-    color:white;
-    font-size: 36px;
-    text-align: center;
-    padding: 10px 0;
-}
-
-
-.reportincidentBtn .icon  {
-    background-color: $emphasisColour4;
-    transition: all .2s ease-in-out; 
-    }
-.reportincidentBtn:hover .icon {
-    transform: scale(1.2); 
-    background-color: white;
-    color:$emphasisColour4;
-    border:1px solid $emphasisColour4;
-    } 
-
-.helpBtn .icon  {
-    background-color: $emphasisColour2;
-    transition: all .2s ease-in-out; 
-    }
-.helpBtn:hover .icon {
-    transform: scale(1.2); 
-    background-color: white;
-    color:$emphasisColour2;
-    border:1px solid $emphasisColour2;
-    } 
 
 
 /* homepage report incident heading */
@@ -398,7 +340,7 @@ p {font-size: 16px;}
 }
 
 
-/* fixes */
+/* security fixes */
 
 .fix {
     position: relative;
@@ -414,18 +356,84 @@ p {font-size: 16px;}
 
 
 
+/*  icon buttons */
+
+.iconBtn {
+    margin:20px 0 0 0;
+
+    .icon {
+        margin:0;
+        padding-top:10px;
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        margin-right:10px;
+    }
+    span  {
+        font-size: 20px;
+        color:$bodyText;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .fa {
+        color:white;
+        font-size: 36px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.reportincidentBtn {
+    .icon  {
+    background-color: $emphasisColour4;
+    }
+    :hover .icon {
+    background-color: white;
+    color:$emphasisColour4;
+    border:1px solid $emphasisColour4;
+    } 
+}
+
+.helpBtn {
+    .icon  {
+    background-color: $emphasisColour2;
+    }
+    :hover .icon {
+    background-color: white;
+    color:$emphasisColour2;
+    border:1px solid $emphasisColour2;
+    } 
+}
+
+.iwanttoBtn, .reportincidentBtn, .helpBtn {
+    .icon  {
+    transition: all .2s ease-in-out; 
+    }
+}
+.iwanttoBtn:hover, .reportincidentBtn:hover, .helpBtn:hover {
+    .icon {
+    transform: scale(1.2);
+    }
+}
+
+
 /* guidance and policy */
 .boxWrap a {
   color: white;
-  text-decoration: none; }
-.gandpKey .fa {
+  text-decoration: none; 
+}
+
+.gandpKey {
+    .fa {
     display:table;
     padding-top: 10px;
     margin-left:-38px;
     font-size: 16px;
-}
-.gandpKey li:before {
-padding-right: 20px;
+    }
+    li:before {
+    padding-right: 20px;
+    }
 }
 
 .pandgBox {
@@ -436,20 +444,21 @@ padding-right: 20px;
     color:white;
     text-align: center;
     position:relative;
-}
-.pandgBox .pandgTitle {
-    font-size: 22px;
-    font-family:$headingFontFamily;
-    display: block;
-    padding: 30px 10px 10px 10px;
-}
-.pandgBox .pandgText {
-    font-size: 15px;
-    padding:10px;
-    width:100%;
-    height:100px;
-    position:absolute;
-    bottom:0;
+    
+    .pandgTitle {
+        font-size: 22px;
+        font-family:$headingFontFamily;
+        display: block;
+        padding: 30px 10px 10px 10px;
+    }
+    .pandgText {
+        font-size: 15px;
+        padding:10px;
+        width:100%;
+        height:100px;
+        position:absolute;
+        bottom:0;
+    }
 }
 
 .pandgBoxes .boxWrap:nth-child(5n+1) {
@@ -508,6 +517,8 @@ padding-right: 20px;
     :hover .pandgBox {background-color: lighten($emphasisColour5,10%); }
     :hover .pandgText {background-color: lighten($emphasisColour5,10%); }
 }
+
+
 
 
 /* bootstrap tabs */
@@ -570,6 +581,9 @@ padding-right: 20px;
     li a {color:white;
     }
 }
+
+
+
     
 /* services */
 
@@ -582,40 +596,42 @@ padding-right: 20px;
     text-align: center;
     position:relative;
     overflow: hidden;
-}
-.servBox .servTitle {
-    font-size: 22px;
-    font-family:$headingFontFamily;
-    display: block;
-    padding: 30px 10px 10px 10px;
-}
-.servBox .servText {
-    font-size: 15px;
-    padding:10px;
-    width:100%;
-    height:100px;
-}
-.servBox .servBoxOvly {
-    position:absolute;
-    height: 100%;
-    width:100%;
-}
-.servBox .servBoxOvly {
-    transition: top 0.5s ease;
-    top:50%;
-}
-.servBox:hover  .servBoxOvly{
-    top:0;
+
+    .servTitle {
+        font-size: 22px;
+        font-family:$headingFontFamily;
+        display: block;
+        padding: 30px 10px 10px 10px;
+    }
+    .servText {
+        font-size: 15px;
+        padding:10px;
+        width:100%;
+        height:100px;
+    }
+    .servBoxOvly {
+        position:absolute;
+        height: 100%;
+        width:100%;
+    }
+    .servBoxOvly {
+        transition: top 0.5s ease;
+        top:50%;
+    }
+    :hover .servBoxOvly{
+        top:0;
+    }
+    .servText {
+        transition: top 0.5s ease;
+        position: absolute;
+        top:200px;
+    }
+    :hover .servText {
+      position: absolute;
+      top: 50%; 
+    }
 }
 
-.servBox .servText {
-    transition: top 0.5s ease;
-    position: absolute;
-    top:200px;
-}
-.servBox:hover .servText {
-  position: absolute;
-  top: 50%; }
 
 .servBoxes .boxWrap:nth-child(5n+1) {
     .servBox, .servBoxOvly {
@@ -676,82 +692,78 @@ padding-right: 20px;
 
 #iwantto {
     text-align: center;
-}
-#iwantto .iwantto:nth-child(5n+1) { 
-    .icon {background-color: $emphasisColour;}
-    :hover .icon {
-        background-color: white;
-        color:$emphasisColour;
-        border:1px solid $emphasisColour;
+
+    .iwantto:nth-child(5n+1) { 
+        .icon {background-color: $emphasisColour;}
+        :hover .icon {
+            background-color: white;
+            color:$emphasisColour;
+            border:1px solid $emphasisColour;
+        }
+    }
+    .iwantto:nth-child(5n+2) { 
+        .icon {background-color: $emphasisColour2;}
+        :hover .icon {
+            background-color: white;
+            color:$emphasisColour2;
+            border:1px solid $emphasisColour2;
+        }
+    }
+    .iwantto:nth-child(5n+3) { 
+        .icon {background-color: $emphasisColour3;}
+        :hover .icon {
+            background-color: white;
+            color:$emphasisColour3;
+            border:1px solid $emphasisColour3;
+        }
+    }
+    .iwantto:nth-child(5n+4) { 
+        .icon {background-color: $emphasisColour4;}
+        :hover .icon {
+            background-color: white;
+            color:$emphasisColour4;
+            border:1px solid $emphasisColour4;
+        }
+    }
+    .iwantto:nth-child(5n+5) { 
+        .icon {background-color: $emphasisColour5;}
+        :hover .icon {
+            background-color: white;
+            color:$emphasisColour5;
+            border:1px solid $emphasisColour5;
+        }
+    }
+    .iwantto span {
+        display:block;
+        font-size: 22px;
+        font-family: $headingFontFamily;
+        color:$bodyText;
+    }
+    .iwanttoWrap {
+        padding:20px;
+        min-height:200px;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .iwantto .icon {
+        transition: all .2s ease-in-out; 
+    }
+    .iwantto:hover .icon {
+        transform: scale(1.2); 
+    }
+    .iwantto .icon   {
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        margin-bottom:20px;
+    }
+    .iwantto .fa {
+        color:white;
+        font-size: 36px;
+        padding: 10px 0;
     }
 }
-#iwantto .iwantto:nth-child(5n+2) { 
-    .icon {background-color: $emphasisColour2;}
-    :hover .icon {
-        background-color: white;
-        color:$emphasisColour2;
-        border:1px solid $emphasisColour2;
-    }
-}
-#iwantto .iwantto:nth-child(5n+3) { 
-    .icon {background-color: $emphasisColour3;}
-    :hover .icon {
-        background-color: white;
-        color:$emphasisColour3;
-        border:1px solid $emphasisColour3;
-    }
-}
-#iwantto .iwantto:nth-child(5n+4) { 
-    .icon {background-color: $emphasisColour4;}
-    :hover .icon {
-        background-color: white;
-        color:$emphasisColour4;
-        border:1px solid $emphasisColour4;
-    }
-}
-#iwantto .iwantto:nth-child(5n+5) { 
-    .icon {background-color: $emphasisColour5;}
-    :hover .icon {
-        background-color: white;
-        color:$emphasisColour5;
-        border:1px solid $emphasisColour5;
-    }
-}
-
-#iwantto .iwantto span {
-    display:block;
-    font-size: 22px;
-    font-family: $headingFontFamily;
-    color:$bodyText;
-}
-.iwanttoWrap {
-    padding:20px;
-    min-height:200px;
-}
-
-#iwantto a:hover{
-    text-decoration: none;
-}
-
-
-#iwantto .iwantto .icon {
-    transition: all .2s ease-in-out; 
-}
-#iwantto .iwantto:hover .icon {
-    transform: scale(1.2); 
-}
-#iwantto .iwantto .icon   {
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    margin-bottom:20px;
-}
-#iwantto .iwantto .fa {
-    color:white;
-    font-size: 36px;
-    padding: 10px 0;
-}
-
 
 
 
@@ -784,6 +796,12 @@ h1.iwantto .fa {
 #accordion {
     text-align: left;
 }
+
+.panel-default {
+    border:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
 .panel-default>.panel-heading {
     color:white;
     border:none;
@@ -798,13 +816,6 @@ h1.iwantto .fa {
 .panel-default>.panel-heading h4 {
     font-family: $headingFontFamily;
     font-size: 22px;
-}
-.panel-default {
-    border:none;
-}
-.panel {
-    -webkit-box-shadow:none;
-    box-shadow:none;
 }
 .panel-default .panel-title>a {
     display: block;
@@ -825,6 +836,9 @@ h1.iwantto .fa {
     margin-top:5px;
     font-size:14px;
 }
+
+
+
 
 
 /* footer */
