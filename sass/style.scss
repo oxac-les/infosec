@@ -173,7 +173,6 @@ p {font-size: 16px;}
     text-transform: uppercase;
     position:relative;
 }
-
 .navbar-default .navbar-nav>li>a {
     color: white;
     border-right: 1px solid #4C9DEF;
@@ -206,6 +205,11 @@ p {font-size: 16px;}
     left:50%;
     color:white;
 }
+.navbar {
+    border-radius:0;
+}
+
+
 
 
 /* home page */
@@ -234,8 +238,8 @@ p {font-size: 16px;}
     }
     li {
     list-style-type: none;
-    }
     margin-left: -38px;
+    }
     .iwantto h2 {
     background-color: $secondaryColour;
     }

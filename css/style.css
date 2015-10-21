@@ -175,61 +175,63 @@ p {
   left: 50%;
   color: white; }
 
+.navbar {
+  border-radius: 0; }
+
 /* home page */
-#homepage {
+#homepage h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px; }
+#homepage .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-right: 10px; }
+#homepage .fa {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 0; }
+#homepage li {
+  list-style-type: none;
   margin-left: -38px; }
-  #homepage h2 {
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px; }
-  #homepage .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    margin-right: 10px; }
-  #homepage .fa {
-    color: white;
-    font-size: 36px;
-    text-align: center;
-    padding: 10px 0; }
-  #homepage li {
-    list-style-type: none; }
-  #homepage .iwantto h2 {
-    background-color: #4891DC; }
-  #homepage .incidentreport h2 {
-    background-color: #BE0F34;
-    height: 40px; }
-  #homepage .quicklinks h2 {
-    background-color: #CF7A30; }
-  #homepage .alertsandfixes h2.alerts {
-    background-color: #002147; }
-  #homepage .alertsandfixes h2.fixes {
-    background-color: #69913B; }
-  #homepage .iwanttoBtn span {
-    font-size: 20px;
-    display: inline-block;
-    position: absolute;
-    color: #001F46; }
-  #homepage .iwanttoBtn .icon {
-    background-color: #4891DC; }
-  #homepage .iwanttoBtn:hover .icon {
-    background-color: white;
-    color: #4891DC;
-    border: 1px solid #4891DC; }
-  #homepage .reportincidentBtn .icon {
-    background-color: #BE0F34; }
-  #homepage .reportincidentBtn:hover .icon {
-    background-color: white;
-    color: #BE0F34;
-    border: 1px solid #BE0F34; }
-  #homepage .iwanttoBtn .icon, #homepage .reportincidentBtn .icon {
-    transition: all .2s ease-in-out; }
-  #homepage .iwanttoBtn:hover .icon, #homepage .reportincidentBtn:hover .icon {
-    transform: scale(1.2); }
+#homepage .iwantto h2 {
+  background-color: #4891DC; }
+#homepage .incidentreport h2 {
+  background-color: #BE0F34;
+  height: 40px; }
+#homepage .quicklinks h2 {
+  background-color: #CF7A30; }
+#homepage .alertsandfixes h2.alerts {
+  background-color: #002147; }
+#homepage .alertsandfixes h2.fixes {
+  background-color: #69913B; }
+#homepage .iwanttoBtn span {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  color: #001F46; }
+#homepage .iwanttoBtn .icon {
+  background-color: #4891DC; }
+#homepage .iwanttoBtn:hover .icon {
+  background-color: white;
+  color: #4891DC;
+  border: 1px solid #4891DC; }
+#homepage .reportincidentBtn .icon {
+  background-color: #BE0F34; }
+#homepage .reportincidentBtn:hover .icon {
+  background-color: white;
+  color: #BE0F34;
+  border: 1px solid #BE0F34; }
+#homepage .iwanttoBtn .icon, #homepage .reportincidentBtn .icon {
+  transition: all .2s ease-in-out; }
+#homepage .iwanttoBtn:hover .icon, #homepage .reportincidentBtn:hover .icon {
+  transform: scale(1.2); }
 
 /*  icon buttons */
 .iconBtn {
