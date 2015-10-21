@@ -531,14 +531,6 @@ p {font-size: 16px;}
 .nav-tabs .icon {
     padding-right:10px;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    background-color: $primaryColour;
-    color:white;
-}
-.nav>li>a:hover, .nav>li>a:focus {
-    background-color: $primaryColour;
-    color:white;  
-}
 .nav-tabs>li>a {
     background-color: #ECECFB;
     color:$primaryColour;
@@ -546,7 +538,14 @@ p {font-size: 16px;}
     padding:20px;
     margin-right: 5px;
 }
-
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background-color: $primaryColour;
+    color:white;
+}
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+    background-color: $primaryColour;
+    color:white;
+}
 .nav-tabs>li.active>a:after {
         content:"\f0d8";
         font-family: fontawesome;
@@ -565,6 +564,8 @@ p {font-size: 16px;}
         left:50%;
         color:white;
 }
+
+
 
 
 /* sidebar */
