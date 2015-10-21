@@ -447,6 +447,24 @@ p {
   padding: 20px;
   margin-right: 5px; }
 
+.nav-tabs > li.active > a:after {
+  content: "\f0d8";
+  font-family: fontawesome;
+  font-size: 20px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  color: white; }
+
+.nav-tabs > li > a:hover:after {
+  content: "\f0d8";
+  font-family: fontawesome;
+  font-size: 20px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  color: white; }
+
 /* sidebar */
 .sideboxTools {
   background-color: #69913B; }
