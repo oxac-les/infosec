@@ -168,9 +168,9 @@ p {font-size: 16px;}
 /* navbar */
 
 .navbar-default {
+    border:0;
     border-radius:0;
     background-color: $secondaryColour;
-    border-color: $secondaryColour;
     font-family: $standardFontFamily;
     font-size: 18px;
     text-transform: uppercase;
@@ -184,8 +184,8 @@ p {font-size: 16px;}
         border-left: 1px solid #4C9DEF;
     }
     .navbar-nav>.active>a, {
-        background: white;
-        color:$secondaryColour;
+        background: none;
+        color:white;
     }
     .navbar-nav>.active>a:hover, 
     .navbar-nav>.active>a:focus {
@@ -199,7 +199,8 @@ p {font-size: 16px;}
     .navbar-collapse {
         padding-left:0;
     }
-    .navbar-nav>li>a:hover:after {
+
+    .navbar-nav>li>a:hover:after, .navbar-nav>li.active>a:after {
         content:"\f0d8";
         font-family: fontawesome;
         font-size: 20px;
@@ -207,6 +208,9 @@ p {font-size: 16px;}
         bottom:-7px;
         left:50%;
         color:white;
+    }
+    .navbar-nav>li:first-child a:after {
+        content:"";
     }
 }
 

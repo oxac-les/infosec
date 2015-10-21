@@ -132,9 +132,9 @@ p {
 
 /* navbar */
 .navbar-default {
+  border: 0;
   border-radius: 0;
   background-color: #4891DC;
-  border-color: #4891DC;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -145,8 +145,8 @@ p {
   .navbar-default .navbar-nav > li > a:first-child {
     border-left: 1px solid #4C9DEF; }
   .navbar-default .navbar-nav > .active > a {
-    background: white;
-    color: #4891DC; }
+    background: none;
+    color: white; }
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
     background: none;
@@ -156,7 +156,7 @@ p {
     color: white; }
   .navbar-default .navbar-collapse {
     padding-left: 0; }
-  .navbar-default .navbar-nav > li > a:hover:after {
+  .navbar-default .navbar-nav > li > a:hover:after, .navbar-default .navbar-nav > li.active > a:after {
     content: "\f0d8";
     font-family: fontawesome;
     font-size: 20px;
@@ -164,6 +164,8 @@ p {
     bottom: -7px;
     left: 50%;
     color: white; }
+  .navbar-default .navbar-nav > li:first-child a:after {
+    content: ""; }
 
 /* home page */
 #homepage h2 {
