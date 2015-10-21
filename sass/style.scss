@@ -809,15 +809,22 @@ h1.iwantto .fa {
 .panel-default .panel-title>a {
     display: block;
 }
-.panel-default .panel-title:after {
+.panel-default .panel-title a:after {
+    content:"\f068";
+    font-family: fontawesome;
+    position:absolute;
+    right:30px;
+    margin-top:5px;
+    font-size:14px;
+}
+.panel-default .panel-title a.collapsed:after {
     content:"\f067";
     font-family: fontawesome;
     position:absolute;
     right:30px;
-    margin-top:-20px;
+    margin-top:5px;
     font-size:14px;
 }
-
 
 
 /* footer */
