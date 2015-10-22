@@ -19,6 +19,20 @@ $rss:#FF9900;
 $twitter:#28A9E0;
 $wordpress:#007897;
     
+/* mixins */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+    
+
 /* front end pages */
 
 /* fonts */
@@ -371,7 +385,7 @@ p {font-size: 16px;}
         padding-top:10px;
         width:60px;
         height:60px;
-        border-radius:50%;
+        @include border-radius(50%);
         margin-right:10px;
     }
     span  {
@@ -539,7 +553,7 @@ p {font-size: 16px;}
 .nav-tabs>li>a {
     background-color: #ECECFB;
     color:$primaryColour;
-    border-radius: 0;
+    @include border-radius(0);
     padding:20px;
     margin-right: 5px;
 }
@@ -779,7 +793,7 @@ p {font-size: 16px;}
     .iwantto .icon   {
         width:60px;
         height:60px;
-        border-radius:50%;
+        @include border-radius(50%);
         margin-bottom:20px;
     }
     .iwantto .fa {
@@ -796,7 +810,7 @@ p {font-size: 16px;}
 h1.iwantto .icon  {
     width:60px;
     height:60px;
-    border-radius:50%;
+    @include border-radius(50%);
     margin-bottom:20px;
     background-color: $emphasisColour2;
     color:white;
@@ -829,7 +843,7 @@ h1.iwantto .fa {
 .panel-default>.panel-heading {
     color:white;
     border:none;
-    border-radius: 0;
+    @include border-radius(0);
 }
 .panel-default:nth-child(odd) .panel-heading{
     background-color: $emphasisColour;
@@ -963,7 +977,7 @@ footer {
 .btn {
     background-color: $secondaryColour; 
     color:#fff;
-    border-radius: 0;
+    @include border-radius(0);
     white-space:normal;
 }
 .btn:hover {

@@ -1,3 +1,4 @@
+/* mixins */
 /* front end pages */
 /* fonts */
 body {
@@ -279,6 +280,9 @@ p {
     padding-top: 10px;
     width: 60px;
     height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
     border-radius: 50%;
     margin-right: 10px; }
   .iconBtn span {
@@ -438,6 +442,9 @@ p {
 .nav-tabs > li > a {
   background-color: #ECECFB;
   color: #002147;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   padding: 20px;
   margin-right: 5px; }
@@ -633,6 +640,9 @@ p {
   #iwantto .iwantto .icon {
     width: 60px;
     height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
     border-radius: 50%;
     margin-bottom: 20px; }
   #iwantto .iwantto .fa {
@@ -644,6 +654,9 @@ p {
 h1.iwantto .icon {
   width: 60px;
   height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
   margin-bottom: 20px;
   background-color: #69913B;
@@ -672,6 +685,9 @@ h1.iwantto .fa {
 .panel-default > .panel-heading {
   color: white;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0; }
 
 .panel-default:nth-child(odd) .panel-heading {
@@ -776,6 +792,9 @@ footer {
 .btn {
   background-color: #4891DC;
   color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
   white-space: normal; }
 
