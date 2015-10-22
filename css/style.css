@@ -311,7 +311,8 @@ p {
   border: 1px solid #69913B; }
 
 .iwanttoBtn .icon, .reportincidentBtn .icon, .helpBtn .icon {
-  transition: all .2s ease-in-out; }
+  -webkit-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out; }
 
 .iwanttoBtn:hover .icon, .reportincidentBtn:hover .icon, .helpBtn:hover .icon {
   transform: scale(1.2); }
@@ -528,12 +529,14 @@ p {
     height: 100%;
     width: 100%; }
   .servBox .servBoxOvly {
-    transition: top 0.5s ease;
+    -webkit-transition: top, 0.5s, ease;
+    transition: top, 0.5s, ease;
     top: 50%; }
   .servBox :hover .servBoxOvly {
     top: 0; }
   .servBox .servText {
-    transition: top 0.5s ease;
+    -webkit-transition: top, 0.5s, ease;
+    transition: top, 0.5s, ease;
     position: absolute;
     top: 200px; }
   .servBox :hover .servText {
@@ -634,7 +637,8 @@ p {
   #iwantto a:hover {
     text-decoration: none; }
   #iwantto .iwantto .icon {
-    transition: all .2s ease-in-out; }
+    -webkit-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out; }
   #iwantto .iwantto:hover .icon {
     transform: scale(1.2); }
   #iwantto .iwantto .icon {

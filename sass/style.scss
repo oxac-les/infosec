@@ -28,10 +28,13 @@ $wordpress:#007897;
           border-radius: $radius;
 }
 
+@mixin transition ($what, $duration, $effect) {
+    -webkit-transition: $what, $duration, $effect; 
+    transition: $what, $duration, $effect; 
+}
 
 
-
-    
+        
 
 /* front end pages */
 
@@ -427,7 +430,7 @@ p {font-size: 16px;}
 
 .iwanttoBtn, .reportincidentBtn, .helpBtn {
     .icon  {
-    transition: all .2s ease-in-out; 
+    @include transition (all, .2s, ease-in-out); 
     }
 }
 .iwanttoBtn:hover, .reportincidentBtn:hover, .helpBtn:hover {
@@ -653,14 +656,14 @@ p {font-size: 16px;}
         width:100%;
     }
     .servBoxOvly {
-        transition: top 0.5s ease;
+        @include transition (top, 0.5s, ease); 
         top:50%;
     }
     :hover .servBoxOvly{
         top:0;
     }
     .servText {
-        transition: top 0.5s ease;
+        @include transition (top, 0.5s, ease); 
         position: absolute;
         top:200px;
     }
@@ -785,7 +788,7 @@ p {font-size: 16px;}
         text-decoration: none;
     }
     .iwantto .icon {
-        transition: all .2s ease-in-out; 
+        @include transition (all, .2s, ease-in-out); 
     }
     .iwantto:hover .icon {
         transform: scale(1.2); 
