@@ -168,7 +168,7 @@ p {font-size: 16px;}
     .fa-exclamation-triangle  {
     width:30px;
     height:30px;
-    border-radius:50%;
+    @include border-radius(50%);
     background-color: $emphasisColour4;
     }
     .fa-exclamation-triangle {
@@ -186,7 +186,7 @@ p {font-size: 16px;}
 
 .navbar-default {
     border:0;
-    border-radius:0;
+    @include border-radius(0);
     background-color: $secondaryColour;
     font-family: $standardFontFamily;
     font-size: 18px;
@@ -248,7 +248,7 @@ p {font-size: 16px;}
     .icon   {
     width:60px;
     height:60px;
-    border-radius:50%;
+    @include border-radius(50%);
     margin-bottom: 20px;
     margin-right:10px;
     }
