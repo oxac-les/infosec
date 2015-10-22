@@ -12,29 +12,15 @@ $emphasisColour2:#69913B; //green
 $emphasisColour3:#CF7A30; //orange
 $emphasisColour4:#BE0F34; //red
 $emphasisColour5:$primaryColour; //oxblue
-$bodyText:#001F46;
+$bodyText:#001F46; 
  
 // social icons
 $rss:#FF9900;
 $twitter:#28A9E0;
 $wordpress:#007897;
     
-/* mixins */
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-          border-radius: $radius;
-}
-
-@mixin transition ($what, $duration, $effect) {
-    -webkit-transition: $what, $duration, $effect; 
-        -moz-transition: $what, $duration, $effect; 
-            transition: $what, $duration, $effect; 
-}
-
-
-        
+// mixins
+@import "compass/css3";
 
 /* front end pages */
 
@@ -180,6 +166,7 @@ p {font-size: 16px;}
     padding-top: 10px;
     }
 }
+
 
 
 /* navbar */
