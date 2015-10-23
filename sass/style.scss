@@ -12,6 +12,7 @@ $emphasisColour2:#69913B; //green
 $emphasisColour3:#CF7A30; //orange
 $emphasisColour4:#BE0F34; //red
 $emphasisColour5:$primaryColour; //oxblue
+$boxBg:#ECECFB;
 $bodyText:#001F46; 
  
 // social icons
@@ -52,7 +53,7 @@ p {font-size: 16px;}
 
 .introduction {
     padding:20px; 
-    background-color: #ECECFB;
+    background-color: $boxBg;
     margin-bottom:20px;
 }
 
@@ -219,6 +220,39 @@ p {font-size: 16px;}
 }
 
 
+/* sidenav */
+
+.sidenav {
+     li a{
+        color: $bodyText;
+    }
+     li {
+        border-bottom: 1px solid $boxBg;
+        padding:10px 0;
+        list-style:none;
+        margin-left:-38px;
+    }
+     li:last-child {
+        border:0;
+     }
+     li.active a:before {
+        content:"\f0da";
+        font-family: fontawesome;
+        font-weight: bold;
+        padding-right:10px;
+        margin-left:-15px;
+     }
+     li a:hover:before  {
+        content:"\f0da";
+        font-family: fontawesome;
+        font-weight: bold;
+        padding-right:10px;
+        margin-left:-15px;
+    }
+     li a:hover  {
+        text-decoration: none;
+     }
+}
 
 
 /* home page */
@@ -541,7 +575,7 @@ p {font-size: 16px;}
     padding-right:10px;
 }
 .nav-tabs>li>a {
-    background-color: #ECECFB;
+    background-color: $boxBg;
     color:$primaryColour;
     @include border-radius(0);
     padding:20px;
