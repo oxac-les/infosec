@@ -35,7 +35,7 @@ h1, h2, h3, h4, h4, h5, h6 {
     font-family: $headingFontFamily;
     letter-spacing: 1px;
 }
-h1 {font-size: 28px;}
+h1 {font-size: 28px; margin-bottom:20px;}
 h2 {font-size: 22px; color:$secondaryColour;}
 h3 {font-size: 20px; }
 h4 {font-size: 20px; color:$secondaryColour}
@@ -223,16 +223,17 @@ p {font-size: 16px;}
 /* sidenav */
 
 .sidenav {
-     li a{
+    padding-top:60px;
+    li a{
         color: $bodyText;
     }
-     li {
+    li {
         border-bottom: 1px solid $boxBg;
         padding:10px 0;
         list-style:none;
         margin-left:-38px;
     }
-     li:last-child {
+    li:last-child {
         border:0;
      }
      li.active a:before {
@@ -249,7 +250,7 @@ p {font-size: 16px;}
         padding-right:10px;
         margin-left:-15px;
     }
-     li a:hover  {
+    li a:hover  {
         text-decoration: none;
      }
 }
