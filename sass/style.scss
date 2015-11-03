@@ -964,15 +964,14 @@ footer {
     }
     li {
         margin-right:10px;
-        margin-top:20px;
-        padding:4px 20px;
-    }
-
-    li:first-child {
+        display: inline;
+        list-style: none;
     }
     li a {
         color: #fff;
         overflow: hidden; 
+        padding:4px 20px;        
+        margin-top:20px;
      }
     li a::before {
     }
@@ -985,15 +984,15 @@ footer {
     }
 }
 #social-links {
-    li.fa-rss {background-color: $rss;} 
-    li.fa-twitter {background-color: $twitter;} 
-    li.fa-wordpress {background-color: $wordpress;} 
-    li.fa-rss:hover, 
-    li.fa-twitter:hover, 
-    li.fa-wordpress:hover{background-color: white;} 
-    li.fa-rss:hover {color: $rss;} 
-    li.fa-twitter:hover {color: $twitter;} 
-    li.fa-wordpress:hover {color: $wordpress;} 
+    li .fa-rss {background-color: $rss;} 
+    li .fa-twitter {background-color: $twitter;} 
+    li .fa-wordpress {background-color: $wordpress;} 
+    li .fa-rss:hover, 
+    li .fa-twitter:hover, 
+    li .fa-wordpress:hover{background-color: white;text-decoration: none;} 
+    li .fa-rss:hover {color: $rss;} 
+    li .fa-twitter:hover {color: $twitter;} 
+    li .fa-wordpress:hover {color: $wordpress;} 
 }
 
 
