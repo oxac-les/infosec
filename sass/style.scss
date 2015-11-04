@@ -1097,7 +1097,11 @@ footer {
         width:20px;
         height:20px;
     }
-    .views-content-counter:last-child {
+    .views-content-counter.active,  .views-content-counter:hover {
+        color:white;
+        background-color:white;
+    }
+    a.views-content-counter:last-child {
         margin-right:15px;
     }
     .slideshow-pager {
