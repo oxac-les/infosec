@@ -1139,7 +1139,7 @@ footer {
         .overlay {
             background:none;
             position: inherit;
-            margin-bottom:20px;
+            margin-bottom:20px; 
             padding:0;
             width:100%;
         }
@@ -1166,19 +1166,5 @@ footer {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
-
-/* waypoints sticky content */
-
-    .stuck {
-      position:fixed;
-      top:10px;
-        background-color:white;
-        z-index:99;
-        width:265px;
-        padding:5px;
-        border:1px solid $primaryColour;
-        box-shadow: 1px 1px 1px $primaryColour;
-    }
 
 }
