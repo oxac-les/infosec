@@ -13,7 +13,7 @@ $emphasisColour3:#CF7A30; //orange
 $emphasisColour4:#BE0F34; //red
 $emphasisColour5:$primaryColour; //oxblue
 $boxBg:#ECECFB;
-$bodyText:#001F46; 
+$bodyText:#001F46;
  
 // social icons
 $rss:#FF9900;
@@ -188,34 +188,48 @@ p {font-size: 16px;}
     .navbar-nav>li>a:first-child {
         border-left: 1px solid #4C9DEF;
     }
-    .navbar-nav>.active>a, {
+    .navbar-nav>.active>a,
+    .navbar-nav>.active-trail>a {
         background: none;
         color:white;
     }
-    .navbar-nav>.active>a:hover, 
-    .navbar-nav>.active>a:focus {
-        background: none;
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus,
+    .navbar-nav>.active-trail>a:hover,
+    .navbar-nav>.active-trail>a:focus {
+        transition: .3s ease-in-out;
+        background-color: darken($secondaryColour,10%); 
         color:white;
+
     }
-    .navbar-nav>li>a:hover, 
+    .navbar-nav>li>a:hover,
     .navbar-nav>li>a:focus {
+        transition: .3s ease-in-out;
+        background-color: darken($secondaryColour,10%); 
         color:white;
     }
     .navbar-collapse {
         padding-left:0;
     }
-
-    .navbar-nav>li>a:hover:after, .navbar-nav>li.active>a:after {
+    .navbar-nav>li>a:after,
+    .navbar-nav>li.active>a:after,
+    .navbar-nav>li.active-trail>a:after {
         content:"\f0d8";
         font-family: fontawesome;
         font-size: 20px;
         position:absolute;
-        bottom:-7px;
+        bottom:-13px;
         left:50%;
         color:white;
     }
+    .navbar-nav>li>a:hover:after,
+    .navbar-nav>li.active>a:after,
+    .navbar-nav>li.active-trail>a:after {
+        bottom:-6px;
+        transition: .3s ease-in-out;
+    }
     .navbar-nav>li:first-child a:after {
-        content:"";
+        left:40%;
     }
 }
 
