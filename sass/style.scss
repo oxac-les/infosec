@@ -26,7 +26,7 @@ $wordpress:#007897;
 /* front end pages */
 
 /* fonts */
-
+ 
 body {
     font-family: $standardFontFamily;
 	color:$bodyText;
@@ -77,7 +77,7 @@ p {font-size: 16px;}
 }
 .showmore a:before {
     content:"\f067";
-    font-family: fontawesome;
+    font-family: fontawesome; 
     font-weight: bold;
     padding-right:10px;
 }
@@ -547,36 +547,36 @@ p {font-size: 16px;}
     .pandgBox { background-color: $emphasisColour; }
     .pandgText {   background-color: darken($emphasisColour,20%); }
     .pandgBox {background-position: 0px 0px; }
-    :hover .pandgBox { background-color: lighten($emphasisColour,10%); }
-    :hover .pandgText {background-color: darken($emphasisColour,10%); }
+    :hover .pandgBox { background-color: lighten($emphasisColour,10%); transition: .5s ease-in-out;} 
+    :hover .pandgText {background-color: darken($emphasisColour,10%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+2) {
     .pandgBox {background-color: $emphasisColour2; }
     .pandgText {background-color:darken($emphasisColour2,10%); }
     .pandgBox {background-position: 100px 100px; }
-    :hover .pandgBox {background-color: lighten($emphasisColour2,10%); }
-    :hover .pandgText {background-color: lighten($emphasisColour2,0%); }
+    :hover .pandgBox {background-color: lighten($emphasisColour2,10%); transition: .5s ease-in-out;}
+    :hover .pandgText {background-color: lighten($emphasisColour2,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+3) {
     .pandgBox {background-color: $emphasisColour3; }
     .pandgText {background-color: darken($emphasisColour3,10%); }
     .pandgBox {background-position: 200px 0px; }
-    :hover .pandgBox {background-color: lighten($emphasisColour3,10%); }
-    :hover .pandgText {background-color: lighten($emphasisColour3,0%); }
+    :hover .pandgBox {background-color: lighten($emphasisColour3,10%); transition: .5s ease-in-out;}
+    :hover .pandgText {background-color: lighten($emphasisColour3,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+4) {
     .pandgBox {background-color: $emphasisColour4; }
     .pandgText {background-color: darken($emphasisColour4,10%); }
     .pandgBox {background-position: 300px 100px; }
-    :hover .pandgBox {background-color: lighten($emphasisColour4,10%); }
-    :hover .pandgText {background-color: lighten($emphasisColour4,0%); }
+    :hover .pandgBox {background-color: lighten($emphasisColour4,10%); transition: .5s ease-in-out;}
+    :hover .pandgText {background-color: lighten($emphasisColour4,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+5) {
     .pandgBox {background-color: $emphasisColour5; }
     .pandgText {background-color:darken($emphasisColour5,0%); }
     .pandgBox {background-position: 400px 0px; }
-    :hover .pandgBox {background-color: lighten($emphasisColour5,10%); }
-    :hover .pandgText {background-color: lighten($emphasisColour5,10%); }
+    :hover .pandgBox {background-color: lighten($emphasisColour5,10%); transition: .5s ease-in-out;}
+    :hover .pandgText {background-color: lighten($emphasisColour5,10%); transition: .5s ease-in-out;}
 }
 
 
