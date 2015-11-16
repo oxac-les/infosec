@@ -240,17 +240,17 @@ p {font-size: 16px;}
     padding-top:60px;
     li a{
         color: $bodyText;
+        font-size:1.2em;
     }
     li {
         border-bottom: 1px solid $boxBg;
         padding:10px 0;
         list-style:none;
-        margin-left:-38px;
     }
     li:last-child {
         border:0;
      }
-     li.active a:before {
+     li.active>a:before {
         content:"\f0da";
         font-family: fontawesome;
         font-weight: bold;
@@ -266,7 +266,13 @@ p {font-size: 16px;}
     }
     li a:hover  {
         text-decoration: none;
+        background: none;
      }
+    
+    // subnav
+    ul>li>ul>li {
+        margin-left:20px;
+    }
 }
 
 
