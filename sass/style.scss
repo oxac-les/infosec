@@ -1132,6 +1132,93 @@ footer {
 }
 
 
+
+
+
+    
+/* form */
+
+form {
+    .btn-default {
+        background-color: $secondaryColour;
+        color: white;
+        border-radius: 0;
+    }
+
+    .form-control {
+        border-radius: 0;
+        border:solid 1px $secondaryColour;
+    }
+
+    .formGrp {
+        margin-top:60px;
+        margin-bottom:40px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    fieldset {
+        border:solid 1px $secondaryColour;
+        margin:40px 0;
+    }
+    legend {
+        width:17%;
+        padding-left:30px;
+        border:0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .form-control.ipadd, .form-control.macadd   {
+        width:52px;
+        margin-right: 10px;
+        float:left;
+    }
+
+
+    
+    /* radio */
+    input[type=radio] {
+        opacity:0;
+    }
+    input[type=radio]+span:before {
+      position: relative;
+      font-size: 1.4em;
+      color:$secondaryColour;
+      margin-right:10px;
+    }
+    input[type=radio]+span:before{
+      content: "\f10c";
+        font-family: fontawesome;
+    }
+    input[type=radio]:checked+span:before{
+      content: "\f05d";
+    font-family: fontawesome;
+    }
+    
+    /* checkbox */
+    input[type=checkbox] {
+        opacity:0;
+    }
+    input[type=checkbox]+span:before {
+      position: relative;
+      font-size: 1.4em;
+      color:$secondaryColour;
+      margin-right:10px;
+    }
+    input[type=checkbox]+span:before{
+      content: "\f096";
+        font-family: fontawesome;
+    }
+    input[type=checkbox]:checked+span:before{
+      content: "\f046";
+        font-family: fontawesome;
+    }
+    .radio label, .checkbox label {
+        padding-left:0;
+    }
+}
+
+
+
 /* responsive adjustments */
 
 /* small phones */

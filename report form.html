@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISIP Assets</title>
+    
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" >
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- jqueryUI -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <!-- Bootstrap JavaScript plugins -->
+    <script src="bootstrap-3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- To Top scripts http://www.mattvarone.com/web-design/uitotop-jquery-plugin/ -->
+	<!-- the necessary css for UItoTop -->	
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.totop/css/ui.totop.css" />
+	<!-- easing plugin ( optional ) -->
+	<script src="jquery.ui.totop/js/jquery.easing.js" type="text/javascript"></script>
+	<!-- UItoTop plugin -->
+	<script src="jquery.ui.totop/js/jquery.ui.totop.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+
+    <!-- equal height -->
+	<script src="js/equalheight.js" type="text/javascript">            
+    </script>
+      
+    <!-- form script-->
+	<script type="text/javascript" src="js/formscript.js"></script>
+        
+    </head>
+  <body>
+
+    <!-- header -->
+
+    <div class="barTop"></div>
+      
+    <div class="headerwrap">
+
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="header col-sm-9">
+                        <div class="oxlogo">
+                            <a href="http://www.ox.ac.uk"><img alt="Oxford Logo" src="img/ox-logo.gif"/></a>
+                        </div>
+                        <div class="sitelogo">
+                            <a href="http://www.thisdomain.co.uk"><img alt="InfoSec Logo" src="img/infosec-logo.png"/></a>
+                        </div>
+                        <div class="sitenamebg">
+                            <h1 class="sitename">Information<br/>Security</h1>
+                        </div>
+                    </div>
+                    <div class="header col-sm-3">
+                        <div class="searchBox">
+                            <input type="text" name="search">
+                            <button type="submit" class="searchBtn"><i class="icon fa fa-search"></i></button>
+                        </div>
+                        <div class=""><a href="#"><i class="icon fa fa-exclamation-triangle"></i><span class="searchTxt">Report an Incident</span></a></div>
+                        <div class="contact"><a href="#"><i class="fa fa-desktop"></i><span class="searchTxt">Contact Us</span></a></div>
+                    </div>
+                </div>
+            </header>
+        </div> <!-- end container -->
+
+    </div> <!-- end wrapper -->
+
+
+
+    <!-- menu -->   
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.php"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a></li>
+            <li><a href="subpage.php">Guidance &amp; Policy</a></li>
+            <li><a href="">I want to..</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">What we do</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+     <!-- home page -->
+    <div class="marginTop clearfix"></div>
+
+    <div id="" class="container"> <!-- page content -->
+
+
+        <div class="row">	
+
+                <div class="col-md-9">
+                    
+                    <form class="form-horizontal">
+                        <h1>Report an incident</h1>
+                        <p>Are you a senior administrator ITSS (if yes  continue/if no tell user to report locally)</p>
+                        
+                          <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Reporting individual</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="name">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">Email address</label>
+                              <div class="col-md-6">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="date" class="col-md-4 control-label">Date of incident</label>
+                              <div class="col-md-6">
+                                  <input type="date" class="form-control" id="date">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="techcontact" class="col-md-4 control-label">Technical contact</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="name">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="admincontact" class="col-md-4 control-label">Administrative contact</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="name">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="datatype1" class="col-md-4 control-label">Is personal data at risk?</label> 
+                                <div class="radio col-md-6">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" ><span>Yes</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2"><span>No</span>
+                                  </label>
+                                </div> 
+                         </div>
+                          <div class="form-group">
+                            <label for="datatype2" class="col-md-4 control-label">Is sensitive personal data at risk?</label> 
+                                <div class="radio col-md-6">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" ><span>Yes</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2"><span>No</span>
+                                  </label>
+                                </div> 
+                         </div>
+                          <div class="form-group">
+                            <label for="datatype3" class="col-md-4 control-label">Is other confidential data at risk?</label> 
+                                <div class="radio col-md-6">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1" ><span>Yes</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2"><span>No</span>
+                                  </label>
+                                </div> 
+                         </div>
+                        <div class="form-group">
+                            <label for="incidenttype" class="col-md-4 control-label">Type of incident</label>  
+                            <div class="col-md-6">
+                                <select id="selectType" class="form-control">
+                                  <option>Select</option>
+                                  <option value="group1">Malware or virus infection</option>
+                                  <option value="group2">Unauthorised access or data breach</option>
+                                  <option  value="group3">Acceptable use policy breach</option>
+                                  <option  value="group4">Denial of service</option>
+                                  <option  value="group5">Physical compromise or data loss</option>
+                                  <option  value="group6">Credentials exposed</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        
+<!-- Malware or virus infection -->
+                    <div id="group1" class="hideme">  
+                         <div class="formGrp">Malware or virus infection</div>
+                          <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Virus/malware family (if known)</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                              </div>
+                          </div>    
+                          <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Users affected</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                              </div>
+                          </div>  
+                          <fieldset>
+                            <legend>Machine details</legend>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Operating system (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control" id="name" placeholder="">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">IP Address</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Mac Address (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                      </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label for="preferredcontact" class="col-md-4 control-label">User owned?</label> 
+                                        <div class="radio col-md-6">
+                                          <label class="radio-inline">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" ><span>Yes</span>
+                                          </label>
+                                          <label class="radio-inline">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span>No</span>
+                                          </label>
+                                        </div> 
+                                 </div>
+                            </fieldset>
+                    </div>
+ 
+<!-- Unauthorised access or data breach -->
+                    <div id="group2" class="hideme">  
+                         <div class="formGrp">Unauthorised access or data breach</div>
+                          <fieldset>
+                            <legend>Machine details</legend>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Operating system (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control" id="name" placeholder="">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">IP Address</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Mac Address (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                      </div>
+                                </div>
+                            </fieldset>
+                          <div class="form-group">
+                            <label for="preferredcontact" class="col-md-4 control-label">University owned?</label> 
+                                <div class="radio col-md-6">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1" ><span>Yes</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2"><span>No</span>
+                                  </label>
+                                </div> 
+                         </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Type of service</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="name" >
+                              </div>
+                        </div>
+                    </div>
+                        
+
+<!-- Acceptable use policy breach -->
+                    <div id="group3" class="hideme">  
+                         <div class="formGrp">Acceptable use policy breach</div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Service or policy breached</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="">
+                              </div>
+                        </div>
+                          <fieldset>
+                            <legend>Offender details</legend>
+                                <div class="form-group">
+                                    <label for="sourceip" class="col-md-4 control-label">Source IP (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                      </div>
+                                </div>                     
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Name (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control" id="name" >
+                                      </div>
+                                </div>                           
+                                <div class="form-group">
+                                    <label for="username" class="col-md-4 control-label">Username (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control" id="name" >
+                                      </div>
+                                </div>                               
+                                  <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Other identifier</label>
+                                      <div class="col-md-6">
+                                        <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                                      </div>
+                                  </div> 
+                        </fieldset>
+                    </div>
+
+ 
+<!-- denial of service  -->
+                    <div id="group4" class="hideme">  
+                         <div class="formGrp">Denial of service</div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Service affected</label>
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="" placeholder="name">
+                              </div>
+                        </div>
+                          <div class="form-group">
+                            <label for="date" class="col-md-4 control-label">Duration of incident</label>
+                              <div class="col-md-6">
+                                  <input type="date" class="form-control" id="date">
+                              </div>
+                          </div>
+                          <fieldset>
+                            <legend>Offender details</legend>
+                                <div class="form-group">
+                                    <label for="sourceip" class="col-md-4 control-label">Source IP Addresses (if known)</label>
+                                      <div class="col-md-6">
+                                        <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                                      </div>
+                                </div>                     
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Name(s) (if known)</label>
+                                      <div class="col-md-6">
+                                        <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                                      </div>
+                                </div>                           
+                                <div class="form-group">
+                                    <label for="username" class="col-md-4 control-label">Username(s) (if known)</label>
+                                      <div class="col-md-6">
+                                        <textarea class="form-control" rows="3" class="form-control" id=""></textarea>
+                                      </div>
+                                </div>  
+                        </fieldset>
+                          <fieldset>
+                            <legend>Target details</legend>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Operating system (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control" id="name" placeholder="name">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">IP Address</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                        <input type="text" class="form-control ipadd" id="name" placeholder="nnn" size="3" maxlength="3">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-md-4 control-label">Mac Address (if known)</label>
+                                      <div class="col-md-6">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                        <input type="text" class="form-control macadd" id="name" placeholder="nn" size="2" maxlength="2">
+                                      </div>
+                                </div> 
+                        </fieldset>
+                    </div>
+
+                        
+<!-- Physical compromise or data loss  -->
+                    <div id="group5" class="hideme">  
+                         <div class="formGrp">Physical compromise or data loss</div>
+                        <div class="form-group">
+                            <label for="sourceip" class="col-md-4 control-label">Description of events</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="6" class="form-control" id=""></textarea>
+                              </div>
+                        </div>                     
+                    </div>
+                        
+ <!-- Credentials exposed -->
+                    <div id="group6" class="hideme">  
+                         <div class="formGrp">Credentials exposed</div>
+                        <div class="form-group">
+                            <label for="sourceip" class="col-md-4 control-label">Username(s) exposed</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="6" class="form-control" id=""></textarea>
+                              </div>
+                        </div>                     
+                       <div class="form-group">
+                        <label for="preferredcontact" class="col-md-4 control-label">What kind of credentials were exposed?</label> 
+                            <div class="checkbox  col-md-6">
+                              <label class="checkbox">
+                                <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox1" value="option1" ><span>Single sign-on</span>
+                              </label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox2" value="option2"><span>Remote access</span>
+                              </label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox3" value="option3" ><span>University System</span>
+                              </label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="optionsCheckbox" id="optionsCheckbox4" value="option4"><span>Other credential</span>
+                              </label>
+                            </div> 
+                        </div>                       
+                        <div class="form-group">
+                            <label for="sourceip" class="col-md-4 control-label">How were the account(s) compromised?</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="6" class="form-control" id=""></textarea>
+                              </div>
+                        </div>                               
+                    </div>
+                        
+                        
+ <!-- form continues -->
+                    <div>
+                          <div class="form-group">
+                            <label for="preferredcontact" class="col-md-4 control-label">Is the issue resolved or ongoing?</label> 
+                                <div class="radio col-md-6">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios5" id="optionsRadios1" value="option1" ><span>Resolved</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios5" id="optionsRadios2" value="option2"><span>Ongoing</span>
+                                  </label>
+                                </div> 
+                         </div>
+                        <div class="form-group">
+                            <label for="sourceip" class="col-md-4 control-label">Mitigating actions taken</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="6" class="form-control" id=""></textarea>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sourceip" class="col-md-4 control-label">Further details/comments</label>
+                              <div class="col-md-6">
+                                <textarea class="form-control" rows="6" class="form-control" id=""></textarea>
+                              </div>
+                        </div>                                   
+                    </div>
+                        
+                        
+                    <div class="col-md-9"></div>
+                    <div class="col-md-1"><button type="submit" class="btn btn-default">Submit</button></div>
+                        
+                    </form>
+                    
+                </div>   
+            
+        </div>
+      
+ 
+    </div> <!-- end content container -->  
+
+    
+
+
+    
+ 
+
+    
+    <!-- footer -->
+
+    <div class="marginTop"></div>
+
+    <div class="barBottom"></div>              
+            
+    <div class="footerwrap">
+        <div class="container">  
+
+			<footer id="footer">
+				<div class="row">
+					  <div class="col-md-4">
+                        <div class="sitename">Information Security Team 
+                            <span class="infosecicon"><img src="img/infosec-logo.png" alt="isip icon"/></span></div>
+                        <div class="copyright">Copyright &copy;<?php echo date("Y"); ?> University of Oxford</div>
+					  </div>                      
+                      
+					  <div class="col-md-5">
+                            <div class="heading">Keep up to date</div>
+                            <ul id="social-links">
+                                <li><a href="" class="fa fa-rss"><h2>RSS</h2></a></li>
+                                <li><a href="" class="fa fa-twitter"><h2>Twitter</h2></a></li>
+                                <li><a href="" class="fa fa-wordpress"><h2>Blog</h2></a></li>
+                            </ul>
+					  </div>
+					  <div class="col-md-3">
+				          <ul id="footerLinks">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Legal Accessibility</a></li>
+                            <li><a href="#">Picture Credits</a></li>
+                            <li><a href="#">Contact Webmaster</a></li>
+                          </ul>
+					  </div>
+				</div>
+			</footer>
+     
+		</div> <!-- end container -->
+    </div> <!-- end wrapper -->
+
+  </body>
+</html>
