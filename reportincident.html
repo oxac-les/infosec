@@ -49,6 +49,18 @@
       
     <!-- form script-->
 	<script type="text/javascript" src="js/formscript.js"></script>
+       
+    <!-- date range picker -->
+      <link rel="stylesheet" type="text/css" media="all" href="daterangepicker/daterangepicker.css" />
+      <script type="text/javascript" src="daterangepicker/moment.js"></script>
+      <script type="text/javascript" src="daterangepicker/daterangepicker.js"></script>
+        
+        <script type="text/javascript">
+        $(function() {
+            $('input[name="daterange"]').daterangepicker();
+        });
+        </script>
+        
         
     </head>
   <body>
@@ -403,7 +415,7 @@
                           <div class="form-group">
                             <label for="date" class="col-md-4 control-label">Duration of incident</label>
                               <div class="col-md-6">
-                                  <input type="date" class="form-control" id="date">
+                                 <input type="text" name="daterange" class="form-control"/>
                               </div>
                           </div>
                           <fieldset>
