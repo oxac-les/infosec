@@ -110,7 +110,7 @@ p {
 .headerwrap {
   background-image: url(../img/watermark.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + 100px) 50%;
+  background-position: calc(50% + 100px) 0%;
   background-color: #002147;
 }
 
