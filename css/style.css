@@ -1433,11 +1433,6 @@ footer .infosecicon img {
 }
 
 /* form */
-/* line 1141, ../sass/style.scss */
-form {
-  /* radio */
-  /* checkbox */
-}
 /* line 1142, ../sass/style.scss */
 form .btn-default {
   background-color: #4891DC;
@@ -1476,77 +1471,89 @@ form .form-control.ipadd, form .form-control.macadd {
   float: left;
 }
 /* line 1179, ../sass/style.scss */
-form input[type=radio] {
-  opacity: 0;
+form input[type=radio], form input[type=checkbox] {
+  margin: 0;
 }
-/* line 1182, ../sass/style.scss */
-form input[type=radio] + span:before {
-  position: relative;
-  font-size: 1.4em;
-  color: #4891DC;
-  margin-right: 10px;
-}
-/* line 1188, ../sass/style.scss */
-form input[type=radio] + span:before {
+/* line 1183, ../sass/style.scss */
+form input[type="radio"]:before {
   content: "\f10c";
   font-family: fontawesome;
-}
-/* line 1192, ../sass/style.scss */
-form input[type=radio]:checked + span:before {
-  content: "\f05d";
-  font-family: fontawesome;
-}
-/* line 1198, ../sass/style.scss */
-form input[type=checkbox] {
-  opacity: 0;
-}
-/* line 1201, ../sass/style.scss */
-form input[type=checkbox] + span:before {
-  position: relative;
-  font-size: 1.4em;
   color: #4891DC;
-  margin-right: 10px;
+  background-color: white;
+  font-size: 1.4em;
+  margin-left: -1px;
 }
-/* line 1207, ../sass/style.scss */
-form input[type=checkbox] + span:before {
+/* line 1191, ../sass/style.scss */
+form input[type="radio"]:checked:before {
+  content: "\f058";
+  font-family: fontawesome;
+  color: #4891DC;
+}
+/* line 1199, ../sass/style.scss */
+form input[type="checkbox"]:before {
   content: "\f096";
   font-family: fontawesome;
+  color: #4891DC;
+  background-color: white;
+  font-size: 1.4em;
+  padding-top: 2px;
 }
-/* line 1211, ../sass/style.scss */
-form input[type=checkbox]:checked + span:before {
-  content: "\f046";
+/* line 1207, ../sass/style.scss */
+form input[type="checkbox"]:checked:before {
+  content: "\f14a";
   font-family: fontawesome;
+  color: #4891DC;
 }
-/* line 1215, ../sass/style.scss */
-form .radio label, form .checkbox label {
-  padding-left: 0;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 1141, ../sass/style.scss */
+  form {
+    /* Safari and Chrome, if Chrome rule needed */
+  }
+  /* line 1218, ../sass/style.scss */
+  form select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+  }
+}
+/* line 1224, ../sass/style.scss */
+form .select {
+  position: relative;
+}
+/* line 1227, ../sass/style.scss */
+form .select:after {
+  content: "\f0d7";
+  font-family: fontawesome;
+  color: #4891DC;
+  position: absolute;
+  right: 25px;
+  top: 7px;
 }
 
 /* responsive adjustments */
 /* small phones */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 1231, ../sass/style.scss */
+  /* line 1249, ../sass/style.scss */
   #homepage h2 {
     margin-top: 30px;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 1238, ../sass/style.scss */
+  /* line 1256, ../sass/style.scss */
   .quicklinks {
     clear: both;
   }
 
-  /* line 1241, ../sass/style.scss */
+  /* line 1259, ../sass/style.scss */
   .slideshow {
     margin-bottom: 60px;
   }
-  /* line 1243, ../sass/style.scss */
+  /* line 1261, ../sass/style.scss */
   .slideshow img {
     display: none;
   }
-  /* line 1246, ../sass/style.scss */
+  /* line 1264, ../sass/style.scss */
   .slideshow .overlay {
     background: none;
     position: inherit;
@@ -1554,19 +1561,19 @@ form .radio label, form .checkbox label {
     padding: 0;
     width: 100%;
   }
-  /* line 1253, ../sass/style.scss */
+  /* line 1271, ../sass/style.scss */
   .slideshow .text {
     color: black;
   }
-  /* line 1256, ../sass/style.scss */
+  /* line 1274, ../sass/style.scss */
   .slideshow .text h4 {
     color: black;
   }
-  /* line 1259, ../sass/style.scss */
+  /* line 1277, ../sass/style.scss */
   .slideshow a:hover {
     text-decoration: none;
   }
-  /* line 1262, ../sass/style.scss */
+  /* line 1280, ../sass/style.scss */
   .slideshow .slideshow-pager {
     right: 0;
     bottom: -35px;

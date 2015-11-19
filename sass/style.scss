@@ -1172,49 +1172,67 @@ form {
         margin-right: 10px;
         float:left;
     }
-
-
     
-    /* radio */
-    input[type=radio] {
-        opacity:0;
-    }
-    input[type=radio]+span:before {
-      position: relative;
-      font-size: 1.4em;
-      color:$secondaryColour;
-      margin-right:10px;
-    }
-    input[type=radio]+span:before{
-      content: "\f10c";
-        font-family: fontawesome;
-    }
-    input[type=radio]:checked+span:before{
-      content: "\f05d";
-    font-family: fontawesome;
+    
+// radio buttons
+    
+    input[type=radio], input[type=checkbox] {
+        margin: 0;
     }
     
-    /* checkbox */
-    input[type=checkbox] {
-        opacity:0;
+    input[type="radio"]:before {
+        content:"\f10c";
+        font-family: fontawesome; 
+        color: $secondaryColour;
+        background-color: white;
+        font-size:1.4em;
+        margin-left:-1px;
     }
-    input[type=checkbox]+span:before {
-      position: relative;
-      font-size: 1.4em;
-      color:$secondaryColour;
-      margin-right:10px;
+    input[type="radio"]:checked:before {
+        content:"\f058";
+        font-family: fontawesome; 
+        color: $secondaryColour;
     }
-    input[type=checkbox]+span:before{
-      content: "\f096";
-        font-family: fontawesome;
+
+    
+// checkboxes
+    input[type="checkbox"]:before {
+        content:"\f096";
+        font-family: fontawesome; 
+        color: $secondaryColour;
+        background-color: white;
+        font-size:1.4em;
+        padding-top: 2px;
     }
-    input[type=checkbox]:checked+span:before{
-      content: "\f046";
-        font-family: fontawesome;
+    input[type="checkbox"]:checked:before {
+        content:"\f14a";
+        font-family: fontawesome; 
+        color: $secondaryColour;
     }
-    .radio label, .checkbox label {
-        padding-left:0;
+    
+// select menu    
+    
+    // overide for select corner radius
+    @media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome, if Chrome rule needed */
+        select {
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px;
+        }
     }
+    
+    .select {
+        position:relative;
+    }
+    .select:after {
+        content:"\f0d7";
+        font-family: fontawesome; 
+        color: $secondaryColour;
+        position:absolute;
+        right:25px;
+        top:7px;
+    } 
+
 }
 
 
