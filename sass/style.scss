@@ -1189,45 +1189,56 @@ form {
 
 
 
-
 /* gandp page sidebox links hide function */
 @media only screen and (min-width : 1200px) {
     .pandg .row {
-        overflow:hidden; 
+        overflow:hidden;
     }
     .sidebox {
         position:absolute;
-        right:0px;
+        right:0;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
-        margin-top:-10px;
     }
     .sidebox:before {
         font-family: fontawesome;
-        content:'\f101';
+        content:'\f0a9';
         font-size:1.4em;
-        color:$secondaryColour;
-        margin-left:250px;
+        color:white;
+        position:absolute;
+        top:10px;
+        left:10px;
+        margin-left:240px;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
     }
-    .col-lg-8-Expanded{
-        width:100%;        
+    .sidebox:hover:before, .sidebox-hide.sidebox:hover:before {
+        color:$primaryColour;
+        cursor: pointer;
+    }
+    .col-lg-8-Expanded {
+        width:100%;    
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .sidebox-hide {
-        right:-278px;
+        right:-283px;
     }
-    .sidebox-hide.sidebox:before{
+    .sidebox-hide.sidebox:before {
         font-family: fontawesome;
-        content:'\f100';
-        margin-left:-25px;
+        content:'\f0a8';
+        margin-left:-30px;
+        color:$secondaryColour;
     }
 
 } 
+
 
 
 
