@@ -1192,8 +1192,8 @@ form {
 
 /* gandp page sidebox links hide function */
 @media only screen and (min-width : 1200px) {
-    .row {
-        overflow:hidden;
+    .pandg .row {
+        overflow:hidden; 
     }
     .sidebox {
         position:absolute;
