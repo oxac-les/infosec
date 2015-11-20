@@ -1189,6 +1189,48 @@ form {
 
 
 
+
+/* gandp page sidebox links hide function */
+@media only screen and (min-width : 1200px) {
+    .row {
+        overflow:hidden;
+    }
+    .sidebox {
+        position:absolute;
+        right:0px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        margin-top:-10px;
+    }
+    .sidebox:before {
+        font-family: fontawesome;
+        content:'\f101';
+        font-size:1.4em;
+        color:$secondaryColour;
+        margin-left:250px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .col-lg-8-Expanded{
+        width:100%;        
+    }
+    .sidebox-hide {
+        right:-278px;
+    }
+    .sidebox-hide.sidebox:before{
+        font-family: fontawesome;
+        content:'\f100';
+        margin-left:-25px;
+    }
+
+} 
+
+
+
 /* responsive adjustments */
 
 /* small phones */
