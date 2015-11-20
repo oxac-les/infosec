@@ -528,59 +528,40 @@ p {font-size: 16px;}
     }
 }
 
-.pandgBoxes .boxWrap:nth-child(5n+1) {
-    .pandgBox,.pandgText {background-color: $emphasisColour;}
-    .pandgBox {background-position: 0px 0px;}
-}
-.pandgBoxes .boxWrap:nth-child(5n+2) {
-    .pandgBox,.pandgText {background-color: $emphasisColour2;}
-    .pandgBox {background-position: 100px 100px;}
-}
-.pandgBoxes .boxWrap:nth-child(5n+3) {
-    .pandgBox,.pandgText {background-color: $emphasisColour3;}
-    .pandgBox {background-position: 200px 0px;}
-}
-.pandgBoxes .boxWrap:nth-child(5n+4) {
-    .pandgBox,.pandgText {background-color: $emphasisColour4;}
-    .pandgBox {background-position: 300px 100px;}
-}
-.pandgBoxes .boxWrap:nth-child(5n+5) {
-    .pandgBox,.pandgText {background-color: $emphasisColour5;}
-    .pandgBox {background-position: 400px 0px;}
-}
+
 
 .pandgBoxes .boxWrap:nth-child(5n+1) {
     .pandgBox { background-color: $emphasisColour; }
     .pandgText {   background-color: darken($emphasisColour,20%); }
-    .pandgBox {background-position: 0px 0px; }
+    .pandgBox {background-position: -50px 0px; }
     :hover .pandgBox { background-color: lighten($emphasisColour,10%); transition: .5s ease-in-out;} 
     :hover .pandgText {background-color: darken($emphasisColour,10%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+2) {
     .pandgBox {background-color: $emphasisColour2; }
     .pandgText {background-color:darken($emphasisColour2,10%); }
-    .pandgBox {background-position: 100px 100px; }
+    .pandgBox {background-position: -250px -100px; }
     :hover .pandgBox {background-color: lighten($emphasisColour2,10%); transition: .5s ease-in-out;}
     :hover .pandgText {background-color: lighten($emphasisColour2,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+3) {
     .pandgBox {background-color: $emphasisColour3; }
     .pandgText {background-color: darken($emphasisColour3,10%); }
-    .pandgBox {background-position: 200px 0px; }
+    .pandgBox {background-position: -450px -100px; }
     :hover .pandgBox {background-color: lighten($emphasisColour3,10%); transition: .5s ease-in-out;}
     :hover .pandgText {background-color: lighten($emphasisColour3,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+4) {
     .pandgBox {background-color: $emphasisColour4; }
     .pandgText {background-color: darken($emphasisColour4,10%); }
-    .pandgBox {background-position: 300px 100px; }
+    .pandgBox {background-position: -650px -100px; }
     :hover .pandgBox {background-color: lighten($emphasisColour4,10%); transition: .5s ease-in-out;}
     :hover .pandgText {background-color: lighten($emphasisColour4,0%); transition: .5s ease-in-out;}
 }
 .pandgBoxes .boxWrap:nth-child(5n+5) {
     .pandgBox {background-color: $emphasisColour5; }
     .pandgText {background-color:darken($emphasisColour5,0%); }
-    .pandgBox {background-position: 400px 0px; }
+    .pandgBox {background-position: -850px -100px; }
     :hover .pandgBox {background-color: lighten($emphasisColour5,10%); transition: .5s ease-in-out;}
     :hover .pandgText {background-color: lighten($emphasisColour5,10%); transition: .5s ease-in-out;}
 }
@@ -719,56 +700,27 @@ p {font-size: 16px;}
 }
 
 
-.servBoxes .boxWrap:nth-child(5n+1) {
-    .servBox, .servBoxOvly {
-  background-color: $emphasisColour; }
-    .servBox {
-  background-position: 0px 0px; }
-}
-.servBoxes .boxWrap:nth-child(5n+2) {
-    .servBox, .servBoxOvly {
-  background-color: $emphasisColour2; }
-.servBox {
-  background-position: 100px 100px; }
-}
-.servBoxes .boxWrap:nth-child(5n+3) {
-    .servBox, .servBoxOvly {
-  background-color: $emphasisColour3; }
-.servBox {
-  background-position: 200px 0px; }
-}
-.servBoxes .boxWrap:nth-child(5n+4) {
-    .servBox, .servBoxOvly {
-  background-color: $emphasisColour4; }
-.servBox {
-  background-position: 300px 100px; }
-}
-.servBoxes .boxWrap:nth-child(5n+5) {
-    .servBox, .servBoxOvly {
-  background-color: $emphasisColour5; }
- .servBox {
-  background-position: 400px 0px; }
-}
+
 
 .servBoxes .boxWrap:nth-child(5n+1) {
     .servBox,.servBoxOvly {background-color: $emphasisColour;}
-    .servBox {background-position: 0px 0px;}
+    .servBox {background-position: -50px 0px;}
 }
 .servBoxes .boxWrap:nth-child(5n+2) {
     .servBox,.servBoxOvly {background-color: $emphasisColour2;}
-    .servBox {background-position: 100px 100px;}
+    .servBox {background-position: -250px -100px;}
 }
 .servBoxes .boxWrap:nth-child(5n+3) {
     .servBox,.servBoxOvly {background-color: $emphasisColour3;}
-    .servBox {background-position: 200px 0px;}
+    .servBox {background-position: -450px -100px;}
 }
 .servBoxes .boxWrap:nth-child(5n+4) {
     .servBox,.servBoxOvly {background-color: $emphasisColour4;}
-    .servBox {background-position: 300px 100px;}
+    .servBox {background-position: -650px -100px;}
 }
 .servBoxes .boxWrap:nth-child(5n+5) {
     .servBox,.servBoxOvly {background-color: $emphasisColour5;}
-    .servBox {background-position: 400px 0px;}
+    .servBox {background-position: -850px -100px;}
 }
 
 
