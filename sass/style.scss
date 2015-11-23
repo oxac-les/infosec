@@ -231,6 +231,13 @@ p {font-size: 16px;}
     .navbar-nav>li:first-child a:after {
         left:40%;
     }
+    
+ @media only screen and (max-width : 992px) {
+     // hide menu pyramid
+        .navbar-nav>li>a:after, .navbar-nav>li>a:hover:after {
+            display:none;
+        }
+    }
 }
 
 
@@ -1124,6 +1131,9 @@ form {
         margin-right: 10px;
         float:left;
     }
+    .webform-container-inline div {
+        display:inline-table;
+    }
     
     
 // radio buttons
@@ -1230,7 +1240,7 @@ form {
             transition: all 0.5s ease-in-out;
         }
         .sidebox-hide {
-            right:-277px;
+            right:-278px;
         }
         .sidebox-hide.sidebox:before {
             font-family: fontawesome;
