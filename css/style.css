@@ -1349,6 +1349,22 @@ footer .infosecicon img {
 }
 
 /* form */
+/* line 1100, ../sass/style.scss */
+form {
+  /*
+  .select {
+      position:relative;
+  }
+  .select:after {
+      content:"\f0d7";
+      font-family: fontawesome; 
+      color: $secondaryColour;
+      position:absolute;
+      right:25px;
+      top:7px;
+  } 
+  */
+}
 /* line 1101, ../sass/style.scss */
 form .btn-default {
   background-color: #4891DC;
@@ -1435,28 +1451,22 @@ form input[type="checkbox"]:checked:before {
     -webkit-border-radius: 0px;
   }
 }
-/* line 1186, ../sass/style.scss */
-form .select {
-  position: relative;
-}
-/* line 1189, ../sass/style.scss */
-form .select:after {
-  content: "\f0d7";
-  font-family: fontawesome;
-  color: #4891DC;
-  position: absolute;
-  right: 25px;
-  top: 7px;
+/* line 1199, ../sass/style.scss */
+form .form-select {
+  padding: 0 20px;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 
 /* gandp page sidebox links hide function */
 @media only screen and (min-width: 1200px) {
-  /* line 1204, ../sass/style.scss */
+  /* line 1211, ../sass/style.scss */
   .pandg .row {
     overflow: hidden;
   }
 
-  /* line 1207, ../sass/style.scss */
+  /* line 1214, ../sass/style.scss */
   .sidebox {
     position: absolute;
     right: 0;
@@ -1466,7 +1476,7 @@ form .select:after {
     transition: all 0.5s ease-in-out;
   }
 
-  /* line 1215, ../sass/style.scss */
+  /* line 1222, ../sass/style.scss */
   .sidebox:before {
     font-family: fontawesome;
     content: '\f0a9';
@@ -1485,12 +1495,12 @@ form .select:after {
     transition: all 0.5s ease-in-out;
   }
 
-  /* line 1232, ../sass/style.scss */
+  /* line 1239, ../sass/style.scss */
   .sidebox:hover:before, .sidebox-hide.sidebox:hover:before {
     cursor: pointer;
   }
 
-  /* line 1235, ../sass/style.scss */
+  /* line 1242, ../sass/style.scss */
   .col-lg-8-Expanded {
     width: 100%;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1499,12 +1509,12 @@ form .select:after {
     transition: all 0.5s ease-in-out;
   }
 
-  /* line 1242, ../sass/style.scss */
+  /* line 1249, ../sass/style.scss */
   .sidebox-hide {
     right: -278px;
   }
 
-  /* line 1245, ../sass/style.scss */
+  /* line 1252, ../sass/style.scss */
   .sidebox-hide.sidebox:before {
     font-family: fontawesome;
     content: '\f0a8';
@@ -1515,27 +1525,27 @@ form .select:after {
 /* small phones */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 1264, ../sass/style.scss */
+  /* line 1271, ../sass/style.scss */
   #homepage h2 {
     margin-top: 30px;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 1271, ../sass/style.scss */
+  /* line 1278, ../sass/style.scss */
   .quicklinks {
     clear: both;
   }
 
-  /* line 1274, ../sass/style.scss */
+  /* line 1281, ../sass/style.scss */
   .slideshow {
     margin-bottom: 60px;
   }
-  /* line 1276, ../sass/style.scss */
+  /* line 1283, ../sass/style.scss */
   .slideshow img {
     display: none;
   }
-  /* line 1279, ../sass/style.scss */
+  /* line 1286, ../sass/style.scss */
   .slideshow .overlay {
     background: none;
     position: inherit;
@@ -1543,19 +1553,19 @@ form .select:after {
     padding: 0;
     width: 100%;
   }
-  /* line 1286, ../sass/style.scss */
+  /* line 1293, ../sass/style.scss */
   .slideshow .text {
     color: black;
   }
-  /* line 1289, ../sass/style.scss */
+  /* line 1296, ../sass/style.scss */
   .slideshow .text h4 {
     color: black;
   }
-  /* line 1292, ../sass/style.scss */
+  /* line 1299, ../sass/style.scss */
   .slideshow a:hover {
     text-decoration: none;
   }
-  /* line 1295, ../sass/style.scss */
+  /* line 1302, ../sass/style.scss */
   .slideshow .slideshow-pager {
     right: 0;
     bottom: -35px;
