@@ -1173,16 +1173,37 @@ form {
     }
     
 // select menu    
-    
-    .form-select {
-      -webkit-appearance: none;
-      -moz-appearance: none; 
-      -ms-appearance:none;
-      appearance: none;            
-      @include border-radius(0px);
+
+    /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, Firefox etc.) */ 
+    @media screen and (-webkit-min-device-pixel-ratio:0)  {
+            .form-select {
+                -webkit-appearance: none;            
+            }
+        .form-select {
+          @include border-radius(0px);
+            padding:0 40px 0 10px;
+            background-image: url(../img/arrow.png);
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+        }
     }
+    /* CSS Statements that only apply on gecko browsers (Firefox etc.) */ 
+    @-moz-document url-prefix()  {
+            .form-select {
+                -moz-appearance: none;           
+            }
+        .form-select {
+          @include border-radius(0px);
+            padding:0 40px 0 10px;
+            background-image: url(../img/arrow.png);
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+        }
+    } 
+     
     
-    /*
+    /* select menu using font awesome icon - worked but not clickable
+    
     .select {
         position:relative;
     }
@@ -1195,12 +1216,7 @@ form {
         top:7px;
     } 
     */
-    .form-select {
-        padding:0 20px;
-        background-image: url(../img/arrow.png);
-        background-repeat: no-repeat;
-        background-position: 95% 50%;
-    }
+
 }
 
 
