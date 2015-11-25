@@ -1174,13 +1174,12 @@ form {
     
 // select menu    
     
-    // overide for select corner radius
-    @media screen and (-webkit-min-device-pixel-ratio:0) { 
-    /* Safari and Chrome, if Chrome rule needed */
-        select {
-          -webkit-appearance: none;
-          -webkit-border-radius: 0px;
-        }
+    .form-select {
+      -webkit-appearance: none;
+      -moz-appearance: none; 
+      -ms-appearance:none;
+      appearance: none;            
+      @include border-radius(0px);
     }
     
     /*
