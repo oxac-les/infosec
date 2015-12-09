@@ -661,7 +661,7 @@ p {font-size: 16px;}
     
 /* services */
 
-.servBox {
+.servBox{
     margin-bottom:20px;
     width:100%;
     Height:200px;
@@ -670,7 +670,6 @@ p {font-size: 16px;}
     text-align: center;
     position:relative;
     overflow: hidden;
-
     .servTitle {
         font-size: 22px;
         font-family:$headingFontFamily;
@@ -692,20 +691,19 @@ p {font-size: 16px;}
         @include transition (top 0.5s ease); 
         top:50%;
     }
-    :hover .servBoxOvly{
-        top:0;
-    }
     .servText {
         @include transition (top 0.5s ease); 
         position: absolute;
         top:200px;
     }
-    :hover .servText {
+}
+.servBox:hover .servBoxOvly{
+        top:0;
+    }
+.servBox:hover .servText {
       position: absolute;
       top: 50%; 
     }
-}
-
 
 
 
