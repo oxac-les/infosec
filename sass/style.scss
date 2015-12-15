@@ -88,7 +88,12 @@ p {font-size: 16px;}
 .showmore a:hover {
     text-decoration: none;
 }
-
+.continuereading a:after {
+    content:"\f0da";
+    font-family: fontawesome;
+    font-weight: bold;
+    padding-left:10px;
+}
 
 /* wraps */
 
@@ -1015,21 +1020,12 @@ footer {
     list-style: none;
     margin-left:-40px;
 }
-.quicklinks .fa-caret-right {
-    color:$bodyText;
-    font-size:14px;
-    padding:0;
-    margin:0 0 0 5px;
-    text-align:left;
-    height:20px;
-}
 .quicklinks li a:after {
     content:"\f0da";
     font-family: fontawesome;
     font-weight: bold;
     padding-left:10px;
 }
-
 
 /* headingBtn */
 
@@ -1272,6 +1268,58 @@ form {
 
 
 
+// list alerts page
+
+.listalert {
+    clear:both;
+    padding:10px 0;
+}
+.nav-previous {
+    float:left;width:200px;
+}
+.nav-next {
+    float:right;text-align:right;width:200px;
+}
+.nav-below {
+    padding-top:20px;
+}
+
+
+
+// alerts page sidebar
+
+.sidebar {
+    .recentposts, .recentcomments, .archives, .categories 
+, .meta {
+        h2 {
+            background-color:$primaryColour;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    li {
+        padding-bottom:5px;
+        list-style-type: none;
+    }
+    li a:after {
+        content: "\f0da";
+        font-family: fontawesome;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    ul {
+        padding-bottom:15px;
+        padding-left:0;
+    }
+}
+
+
+
+
 /* responsive adjustments */
 
 /* small phones */
@@ -1328,3 +1376,4 @@ form {
 @media only screen and (min-width : 1200px) {
 
 }
+
