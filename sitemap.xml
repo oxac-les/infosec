@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='xml-sitemap.xsl'?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.infosec.ox.ac.uk/</loc>
+  <lastmod>2015-12-11T15:49:30+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/report-incident</loc>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/contact-us</loc>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy</loc>
+  <lastmod>2015-12-11T15:42:48+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want</loc>
+  <lastmod>2015-12-11T15:49:31+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services</loc>
+  <lastmod>2015-12-11T15:49:32+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/what-we-do</loc>
+  <lastmod>2015-12-11T15:49:32+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/strong-passwords</loc>
+  <lastmod>2015-12-11T15:49:32+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want/phishing</loc>
+  <lastmod>2015-12-11T15:49:32+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/protect-devices</loc>
+  <lastmod>2015-12-11T15:49:33+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want/mobile</loc>
+  <lastmod>2015-12-11T15:49:33+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want/stay-safe</loc>
+  <lastmod>2015-12-11T15:49:33+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/71</loc>
+  <lastmod>2015-12-11T15:49:33+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/current-alert/janet-ddos-attacks-affecting-external-connectivity</loc>
+  <lastmod>2015-12-11T15:49:34+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/current-alert/current-alert-demo-sticky-item</loc>
+  <lastmod>2015-12-11T15:49:34+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/privacy-policy</loc>
+  <lastmod>2015-12-11T15:49:34+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/cookies</loc>
+  <lastmod>2015-12-11T15:49:34+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/legal-accessibility</loc>
+  <lastmod>2015-12-11T15:49:34+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/picture-credits</loc>
+  <lastmod>2015-12-11T15:49:35+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/contact-webmaster</loc>
+  <lastmod>2015-12-11T15:49:35+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/management</loc>
+  <lastmod>2015-12-11T15:42:59+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/third-parties</loc>
+  <lastmod>2015-12-11T15:49:35+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/assurance</loc>
+  <lastmod>2015-12-11T15:49:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/training-and-awareness</loc>
+  <lastmod>2015-12-11T15:49:36+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/it-security</loc>
+  <lastmod>2015-12-11T15:43:14+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/asset-management</loc>
+  <lastmod>2015-12-11T15:49:37+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/risk-management</loc>
+  <lastmod>2015-12-11T15:43:22+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/incident-management</loc>
+  <lastmod>2015-12-11T15:43:35+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/environmental-security</loc>
+  <lastmod>2015-12-11T15:49:37+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want/secure-accounts</loc>
+  <lastmod>2015-12-11T15:49:37+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/want/email-securely</loc>
+  <lastmod>2015-12-11T15:49:38+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/protect-privacy</loc>
+  <lastmod>2015-12-11T15:49:38+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/1372</loc>
+  <lastmod>2015-12-11T15:49:39+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/management</loc>
+  <lastmod>2015-12-11T15:49:39+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/third-parties</loc>
+  <lastmod>2015-12-11T15:49:40+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/compliance</loc>
+  <lastmod>2015-12-11T15:49:40+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/training-and-awareness</loc>
+  <lastmod>2015-12-11T15:49:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/it-security</loc>
+  <lastmod>2015-12-11T15:49:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/asset-management</loc>
+  <lastmod>2015-12-11T15:49:41+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/risk-management</loc>
+  <lastmod>2015-12-11T15:49:42+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/incident-management</loc>
+  <lastmod>2015-12-11T15:49:42+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/services/environmental-security</loc>
+  <lastmod>2015-12-11T15:49:42+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/53</loc>
+  <lastmod>2015-12-11T15:49:43+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/57</loc>
+  <lastmod>2015-12-11T15:49:43+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/52</loc>
+  <lastmod>2015-12-11T15:49:44+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/2281</loc>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/2271</loc>
+  <lastmod>2015-12-11T15:49:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/alert-category/microsoft</loc>
+  <lastmod>2015-12-11T15:49:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/alert-category/google</loc>
+  <lastmod>2015-12-11T15:49:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/54</loc>
+  <lastmod>2015-12-11T15:49:45+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/guidance-policy/compliance</loc>
+  <lastmod>2015-12-11T15:49:46+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.infosec.ox.ac.uk/node/2280</loc>
+</url>
+</urlset>

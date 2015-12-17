@@ -1,158 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ISIP Assets</title>
-    
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="bootstrap-3.3.1/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css" >
-
-    <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <!-- jqueryUI -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-
-    <!-- Bootstrap JavaScript plugins -->
-    <script src="bootstrap-3.3.1/js/bootstrap.min.js"></script>
-
-    <!-- To Top scripts http://www.mattvarone.com/web-design/uitotop-jquery-plugin/ -->
-	<!-- the necessary css for UItoTop -->	
-	<link rel="stylesheet" type="text/css" media="screen" href="jquery.ui.totop/css/ui.totop.css" />
-	<!-- easing plugin ( optional ) -->
-	<script src="jquery.ui.totop/js/jquery.easing.js" type="text/javascript"></script>
-	<!-- UItoTop plugin -->
-	<script src="jquery.ui.totop/js/jquery.ui.totop.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-
-    <!-- equal height -->
-	<script src="js/equalheight.js" type="text/javascript">            
-    </script>
-   
-    <!-- sidebox hide -->
-	<script src="js/sidebox.js" type="text/javascript">            
-    </script>
-        
-    <!-- jquery waypoints sticky content alerts & fixes http://imakewebthings.com/waypoints/shortcuts/sticky-elements/ -->
-
-    <script src="js/sticky/jquery.waypoints.js"></script>
-    <script src="js/sticky/sticky.min.js"></script>
-        
-    <script>
-        $(document).ready(function() {
-            var sticky = new Waypoint.Sticky({
-              element: $('.fixedContent')[0]
-            })
-        });
-    </script> 
-
-    <style>
-        .stuck {
-          position:fixed;
-          top:10px;
-            background-color:white;
-            z-index:99;
-            width:265px;
-            padding:10px;
-            box-shadow: 1px 1px 1px black;
-        }
-    </style>
-        
-    </head>
-  <body>
-
-    <!-- header -->
-
-    <div class="barTop"></div>
-      
-    <div class="headerwrap">
-
-        <div class="container">
-            <header>
-                <div class="row">
-                    <div class="header col-lg-9">
-                        <div class="oxlogo">
-                            <a href="http://www.ox.ac.uk"><img alt="Oxford Logo" src="img/ox-logo.gif"/></a>
-                        </div>
-                        <div class="sitelogo">
-                            <a href="http://www.thisdomain.co.uk"><img alt="InfoSec Logo" src="img/infosec-logo.png"/></a>
-                        </div>
-                        <div class="sitenamebg">
-                            <h1 class="sitename">Information<br/>Security</h1>
-                        </div>
-                    </div>
-                    <div class="header col-lg-3">
-                        <div class="searchBox">
-                            <input type="text" name="search">
-                            <button type="submit" class="searchBtn"><i class="icon fa fa-search"></i></button>
-                        </div>
-                        <div class=""><a href="reportincident.html"><i class="icon fa fa-exclamation-triangle"></i><span class="searchTxt">Report an Incident</span></a></div>
-                        <div class="contact"><a href="#"><i class="fa fa-desktop"></i><span class="searchTxt">Contact Us</span></a></div>
-                    </div>
-                </div>
-            </header>
-        </div> <!-- end container -->
-
-    </div> <!-- end wrapper -->
-
-
-
-    <!-- menu -->   
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-home"></i><span class="sr-only">(current)</span></a></li>
-            <li><a href="">Guidance &amp; Policy</a></li>
-            <li><a href="">I want to..</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">What we do</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
+    <?php include('inc/header.php') ?>	
 
      <!-- home page -->
     <div class="marginTop clearfix"></div>
@@ -227,7 +73,7 @@
             </div>	 
             
             <div class="col-sm-6 col-md-3 col4 alertsandfixes">
-                <div class="fixedContent">
+
                 <h2 class="alerts">Current Alerts</h2>
                 
                 <div class="alert">
@@ -244,7 +90,7 @@
                     <span class="alertLink"><a href="">Continue reading</a></span>
                 </div>
 
-                <span class="showmore"><a href="" title="show more alerts">Show More</a></span>
+                <span class="showmore"><a href="listalerts.php" title="show more alerts">Show More</a></span>
                 
                 
                 
@@ -261,7 +107,7 @@
                 </div>
                 
                 <span class="showmore"><a href="" title="show more security fixes">Show More</a></span>
-                </div>
+
             </div>	 
         </div>
 
@@ -371,9 +217,9 @@
      <!-- Guidance &amp; Policy Page -->
     <div class="marginTop clearfix"></div>
 
-    <div id="content" class="container"> 
+    <div id="content" class="container pandg"> 
         
-        <div class="pandg row">
+        <div class="row">
             <div class="col-md-3">
                 <div class="sidenav">
                     <ul>
@@ -470,85 +316,85 @@
                 
                 <div class="view-content row servBoxes">	
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                                <span class="servTitle">Local Policy Responsibilities</span>
-                                 <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">Local Policy Responsibilities</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
                     </div>	
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">2</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">2</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">3</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">3</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">4</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">4</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                                <span class="servTitle">5</span>
-                                 <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">5</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
-                    </div>	
-                    <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
-                        <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">1</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
-                            </div>
-                        </a>
-                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">2</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">6</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
-                        <div class="servBox">
                         <a href="">
-                            <div class="servBoxOvly">
-                            <span class="servTitle">3</span>
-                             <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div>               
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">7</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
                             </div>
                         </a>
-                        </div>
-                    </div>           
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 boxWrap">
+                        <a href="">
+                            <div class="servBox">
+                                <div class="servBoxOvly">
+                                    <span class="servTitle">8</span>
+                                     <div class="servText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula blandit orci id dignissim. </div> 
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div><!-- end col9 -->
             
@@ -746,52 +592,6 @@
     </div> <!-- end content container -->  
 
     
-
-
-    
-    
-
+    <?php include('inc/footer.php') ?>	
 
     
-    <!-- footer -->
-
-    <div class="marginTop"></div>
-
-    <div class="barBottom"></div>              
-            
-    <div class="footerwrap">
-        <div class="container">  
-
-			<footer id="footer">
-				<div class="row">
-					  <div class="col-md-4">
-                        <div class="sitename">Information Security Team 
-                            <span class="infosecicon"><img src="img/infosec-logo.png" alt="isip icon"/></span></div>
-                        <div class="copyright">Copyright &copy;<?php echo date("Y"); ?> University of Oxford</div>
-					  </div>                      
-                      
-					  <div class="col-md-5">
-                            <div class="heading">Keep up to date</div>
-                            <ul id="social-links">
-                                <li><a href="" class="fa fa-rss"><h2>RSS</h2></a></li>
-                                <li><a href="" class="fa fa-twitter"><h2>Twitter</h2></a></li>
-                                <li><a href="" class="fa fa-wordpress"><h2>Blog</h2></a></li>
-                            </ul>
-					  </div>
-					  <div class="col-md-3">
-				          <ul id="footerLinks">
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Cookies</a></li>
-                            <li><a href="#">Legal Accessibility</a></li>
-                            <li><a href="#">Picture Credits</a></li>
-                            <li><a href="#">Contact Webmaster</a></li>
-                          </ul>
-					  </div>
-				</div>
-			</footer>
-     
-		</div> <!-- end container -->
-    </div> <!-- end wrapper -->
-
-  </body>
-</html>
