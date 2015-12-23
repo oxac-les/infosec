@@ -81,12 +81,24 @@ p {font-size: 16px;}
     font-weight: bold;
     padding-right:10px;
 }
-.showmore  {
+.showmore a {
     display:block;
     margin:20px 0;
 }
+.showmore a:after {
+    content:"Show More";
+}
 .showmore a:hover {
     text-decoration: none;
+}
+.showmore a[aria-expanded="true"]:before {
+    content:"\f068";
+    font-family: fontawesome; 
+    font-weight: bold;
+    padding-right:10px;
+}
+.showmore a[aria-expanded="true"]:after {
+    content:"Show Less";
 }
 .continuereading a:after {
     content:"\f0da";
@@ -1319,8 +1331,6 @@ form {
         padding-left:0;
     }
 }
-
-
 
 
 /* responsive adjustments */

@@ -89,10 +89,25 @@
                     <span class="alertTxt">The numerically-improbable ‘CVE-2015-3456‘ is here and it wants to kill your datacentre. </span>
                     <span class="alertLink"><a href="">Continue reading</a></span>
                 </div>
+                          
+            <div id="morealerts" class="collapse">
+                <div class="alert">
+                    <span class="alertDate">23 Nov 2015</span>
+                    <span class="alertTitle">And it was all going so well</span>
+                    <span class="alertTxt">The numerically-improbable ‘CVE-2015-3456‘ is here and it wants to kill your datacentre. </span>
+                    <span class="alertLink"><a href="">Continue reading</a></span>
+                </div>
+                
+                <div class="alert">
+                    <span class="alertDate">23 Nov 2015</span>
+                    <span class="alertTitle">And it was all going so well</span>
+                    <span class="alertTxt">The numerically-improbable ‘CVE-2015-3456‘ is here and it wants to kill your datacentre. </span>
+                    <span class="alertLink"><a href="">Continue reading</a></span>
+                </div>
+            </div>
 
-                <span class="showmore"><a href="listalerts.php" title="show more alerts">Show More</a></span>
-                
-                
+                <span class="showmore collapse in"><a href="#morealerts" data-toggle="collapse" title="show more alerts"></a></span>
+
                 
                 <h2 class="fixes">Security Fixes</h2>
                 
@@ -105,8 +120,20 @@
                     <span class="fixRef">21 August 2015 OSB2015-103:</span>
                     <span class="fixLink"><a href="">Apple QuickTime for Windows update</a></span>
                 </div>
+
+            <div id="morefixes" class="collapse">
+                <div class="fix">
+                    <span class="fixRef">21 August 2015 OSB2015-103:</span>
+                    <span class="fixLink"><a href="">Apple QuickTime for Windows update</a></span>
+                </div>
+
+                <div class="fix">
+                    <span class="fixRef">21 August 2015 OSB2015-103:</span>
+                    <span class="fixLink"><a href="">Apple QuickTime for Windows update</a></span>
+                </div>
+            </div>
                 
-                <span class="showmore"><a href="" title="show more security fixes">Show More</a></span>
+                <span class="showmore"><a href="#morefixes" data-toggle="collapse" title="show more security fixes"></a></span>
 
             </div>	 
         </div>
